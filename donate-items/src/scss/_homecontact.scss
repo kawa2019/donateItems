@@ -1,0 +1,105 @@
+footer{
+    width: 100vw;
+    height: 100vh;
+    background:url("../assets/images/Background-Contact-Form.jpg") #FFFFFFC9 0% 0% no-repeat;    
+    background-size: cover;
+    opacity: 1;
+    .headerFoot{
+        height: 10.7%;
+        width: 18.84%;
+        position: relative;
+        left: 68.7%;
+        top: 19.5%;
+         p{
+           color: #3C3C3C;
+           text-align: center;
+           font-family: $font-base;
+           font-size: 3.7rem; 
+           letter-spacing: -0.074rem;   
+           opacity: 1;
+           display: inline-block;
+           line-height: 50%; 
+           height: 47.8%;
+         }
+         span{
+             position: absolute;
+             bottom: 0%;
+             left: 15%;                  
+             display: block;
+             width: 71%;
+             height: 30%;
+             opacity: 1;
+             background-image: url(../assets/images/Decoration.svg);
+             
+         }
+       }
+    form{
+        position: absolute;
+        width: 27.8%;
+        height: 32%;
+        opacity: 1;
+        left: 64.7%;
+        //right: 7.5%;
+        top: 37%;
+        .sameLabel{
+            label{
+
+            text-align: left;
+            font-size: 1.6rem;  
+            line-height: 3.6rem;
+            letter-spacing: 0;  
+            font-family: "Semibold";
+            color: #3C3C3C;
+            display: inline-block;
+            }
+            input{
+                font-size: 1.8rem;
+                text-align: left;
+                display: block;
+                color:#3C3C3C26;
+                border:none
+            }
+        }
+        .group_nick{
+            height: 19%;
+            width: 48.5%;
+            display: inline-block;
+            border-bottom: 1px solid #707070;
+                
+        } 
+        .email{
+            margin-left: 3%;
+        }
+        .group_text{
+           position: absolute;
+            height: 41.3%;
+            border-bottom: 1px solid #707070;
+            top: 31.19%;
+            bottom: 27.5%;
+            width: 100% ;
+            textarea{
+                height: 72%;
+                width: 100%;
+                text-align: left;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                color: #3C3C3C26;
+                display: block;
+                border: none;
+            } 
+        }  
+        .sendMessage{
+            border: 0.75px solid #3C3C3C;
+            position: absolute;
+            font-family: "Light";
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            letter-spacing: 0;
+            color: #000000;
+            opacity: 1;
+            bottom: 0%;
+            left: 71%;
+            padding: 2.462% 9.845%;
+        }          
+    }
+}

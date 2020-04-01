@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: local('Merriweather'), url(../assets/fonts/Merriweather/Merriweather-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+  }  
+  @import "reset";
+  @import "./settings/font";
+  @import "./settings/color";
+  @import "./homecontact";
+
+  html{
+    font-family: $font-base;
+    font-size: 10px;   
+}
