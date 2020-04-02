@@ -3,103 +3,139 @@ footer{
     height: 100vh;
     background:url("../assets/images/Background-Contact-Form.jpg") #FFFFFFC9 0% 0% no-repeat;    
     background-size: cover;
+    
     opacity: 1;
+    .container-opacity{
+        background: rgba($color: #fff, $alpha: 0.8);
+        width: 100%;
+        height: 100%;
+        }
+    }
+    .container-general{
+        width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        .copyright{
+           // position: relative;
+            width: 60.83%;
+            margin-left: 47rem;
+            margin-top: 20rem;
+            display: flex;
+            justify-content: space-between; 
+           p{
+            font-size: 1.23rem;
+            line-height: 1.64rem;
+            letter-spacing: 0;
+            color: #3C3C3C;
+            display: flex;
+            align-items: flex-end;
+          }
+        // display: flex;
+        // justify-content: flex-end;
+    }   
     .headerFoot{
-        height: 10.7%;
-        width: 18.84%;
+        margin: 0 auto;
+        height: 7.52rem;
+        width: 24.88rem;
         position: relative;
-        left: 68.7%;
-        top: 19.5%;
+        //left: 68.7%;
+        //top: 19.5%;
          p{
            color: #3C3C3C;
-           text-align: center;
+           //text-align: center;
            font-family: $font-base;
-           font-size: 3.7rem; 
-           letter-spacing: -0.074rem;   
+           font-size: 2.6rem; 
+           letter-spacing: -0.058rem;   
            opacity: 1;
            display: inline-block;
-           line-height: 50%; 
-           height: 47.8%;
+           line-height: 4.21rem; 
+           height: 3.98rem;
+          // width: 100%;
          }
          span{
              position: absolute;
              bottom: 0%;
              left: 15%;                  
              display: block;
-             width: 71%;
-             height: 30%;
+             width: 17.58rem;
+             height: 2.53rem;
              opacity: 1;
              background-image: url(../assets/images/Decoration.svg);
-             
+             background-size: contain;
          }
        }
     form{
-        position: absolute;
-        width: 27.8%;
-        height: 32%;
-        opacity: 1;
-        left: 64.7%;
+        position: relative;
+        width: 36.69rem;
+        height: 36.2rem;
+        display: inline-block;
+        margin-left: 83.31rem;
+        margin-top: 12rem;
+       // left: 64.7%;
         //right: 7.5%;
-        top: 37%;
+       // top: 37%;
+       ::placeholder{
+        color:#3C3C3C26;
+       }
         .sameLabel{
+            margin-top: 5rem;
             label{
 
             text-align: left;
-            font-size: 1.6rem;  
-            line-height: 3.6rem;
+            font-size: 1.1rem;  
+            line-height: 2.47rem;
             letter-spacing: 0;  
             font-family: "Semibold";
             color: #3C3C3C;
             display: inline-block;
             }
             input{
-                font-size: 1.8rem;
+                font-size: 1.23rem;
                 text-align: left;
                 display: block;
-                color:#3C3C3C26;
                 border:none
             }
         }
         .group_nick{
-            height: 19%;
-            width: 48.5%;
+            height: 4.43rem;
+            width: 17.79rem;
             display: inline-block;
             border-bottom: 1px solid #707070;
-                
+            // margin-top: 1rem;    
         } 
         .email{
-            margin-left: 3%;
+            margin-left: 1.1rem;
         }
         .group_text{
-           position: absolute;
-            height: 41.3%;
+         //  position: absolute;
+            height: 9.39rem;
             border-bottom: 1px solid #707070;
-            top: 31.19%;
-            bottom: 27.5%;
-            width: 100% ;
+            margin-top: 3rem;
+           // bottom: 27.5%;
+            width: 100%;
             textarea{
-                height: 72%;
+                height: 6.92rem;
                 width: 100%;
                 text-align: left;
-                font-size: 1.8rem;
-                line-height: 2.8rem;
-                color: #3C3C3C26;
+                font-size: 1.23rem;
+                line-height: 1.91rem;
                 display: block;
                 border: none;
+                resize: none;
             } 
         }  
         .sendMessage{
             border: 0.75px solid #3C3C3C;
             position: absolute;
             font-family: "Light";
-            font-size: 1.8rem;
-            line-height: 3.2rem;
+            font-size: 1.23rem;
+            line-height: 2.187rem;
             letter-spacing: 0;
             color: #000000;
             opacity: 1;
-            bottom: 0%;
-            left: 71%;
-            padding: 2.462% 9.845%;
+            bottom: 0rem;
+            margin-left: 26.1rem;
+            padding: 0.928rem 3.61rem;
         }          
     }
 }
