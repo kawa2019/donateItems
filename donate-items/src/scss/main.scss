@@ -9,7 +9,11 @@
   @import "reset";
   @import "./settings/font";
   @import "./settings/color";
+  @import "./settings/general";
   @import "./homecontact";
+  @import "./header";
+  @import "./threeCol";
+  @import "./core4steps"; 
 
   html{
     font-family: $font-base;

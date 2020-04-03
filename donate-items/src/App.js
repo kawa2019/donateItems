@@ -17,7 +17,9 @@ import {
 const App=()=> {
   return (
     <HashRouter>
-      <Route path="/" component={Home}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/login"/>
+      <Route path="/register"/>
     </HashRouter>
     );
 }

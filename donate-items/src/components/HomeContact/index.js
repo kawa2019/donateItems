@@ -12,7 +12,7 @@ export default function HomeContact(){
         <form>
             <div className="headerFoot">
             <p>Skontaktuj się z nami</p>
-            <span>            
+            <span className="main_dec">            
             </span>
             </div>
             <div className="group_nick sameLabel">

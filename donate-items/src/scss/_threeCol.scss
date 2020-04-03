@@ -1,0 +1,38 @@
+.three_col{
+    background-color: $color3;
+    height: 37.4vh;
+    .statistics{
+        display: flex;
+        justify-content: space-between;
+       // align-items: center;
+    .oneOfThree{
+       width: 25.5rem;
+       height: 18.5rem;
+       margin-top: 3rem;
+       //display: inline-block;
+       span{
+        margin-top: 1rem;
+        font-family: "Light" "Open Sans";
+        font-size: 7rem;
+        text-align: center;
+        color: #5E5322;
+        display: block;
+       }
+       h3{
+        margin-top: 2rem;
+        font-size: 1.23rem;
+        letter-spacing: -0.036rem;
+        color: #3C3C3C;
+        text-align: center;
+       }
+       p{
+        margin-top: 1.8rem;   
+        font-family: "Light" "Merriweather";
+        font-size: 1.1rem;
+        letter-spacing: -0.032rem;
+        color: #3C3C3C;
+        text-align: center;
+       }       
+    }
+  }  
+}

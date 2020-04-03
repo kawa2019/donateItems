@@ -1,0 +1,91 @@
+.steps{
+   margin-top: 4rem; 
+   height: 44.58rem;
+//    .main_hed{
+//        height: 4.35rem;
+//        width: 26rem;
+//    }
+.headerFoot{
+    margin: 0 auto;
+    height: 7.86rem;
+    width: 30.9rem;
+    position: relative;
+     p{
+       color: #3C3C3C;
+       font-family: $font-base;
+       font-size: 2.6rem; 
+       letter-spacing: -0.058rem;   
+       opacity: 1;
+       display: inline-block;
+       line-height: 4.21rem; 
+       height: 3.98rem;
+     }
+     .main_dec{
+         position: absolute;
+         bottom: 0%;
+         left: 15%;                  
+         display: block;
+         width: 17.58rem;
+         height: 2.53rem;
+         opacity: 1;
+         background-image: url(../assets/images/Decoration.svg);
+         background-size: contain;
+     }
+   }  
+   .allSteps{
+       margin-top: 2rem;
+       height: 23.22rem;
+       display: flex;
+       justify-content: space-between;
+       .oneOfSteps{
+           height: 16.5rem;
+           img{
+               margin: 0 auto;
+               display: block;
+           }
+           .head{
+               font-size: 1.43rem;
+               padding: 1.1rem;
+               position: relative;
+               &::after{
+                   content: "";
+                   position: absolute;
+                   left: 35%;
+                   bottom: 0;
+                   width: 30%;
+                   height: 0.05rem;
+                   background: #3C3C3C;
+               }
+           }
+           .headText{
+            font-size: 1.3rem;
+            width: 14rem;
+            margin:0 auto;
+            margin-top: 2rem;
+           }
+           p{
+            text-align: center;
+            color: #3C3C3C;
+           }
+       }
+    }
+    button{
+        height: 9.26rem;
+        width: 26.85rem;
+        display: block;
+        padding: 0.3rem 4rem; 
+        font-family: "Light";
+        font-size: 3.2rem;
+        transition: border 0.3s ease-out;
+        cursor: pointer;
+        margin: 0 auto;
+        &:hover{
+            opacity: 0.75;           
+            border: 0.05rem solid #3C3C3C                        
+        }
+        a{
+            text-decoration: none;
+            color: #3C3C3C;
+        }
+  }
+} 
