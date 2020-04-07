@@ -8,13 +8,14 @@ import {Link} from "react-router-dom"
 
 export default function Core(){
     return (
-        <section className="steps">
+        <section className="steps" id="core">
             <div className="container">
                <div className="headerFoot">
                <p>Wystarczą 4 proste kroki</p>
                <span className="main_dec">            
                </span>
                </div>
+              
                <div className="allSteps">
                  <div className="oneOfSteps">
                      <img src={t_shirt}/>
@@ -37,6 +38,7 @@ export default function Core(){
                      <p className="headText">kurier przyjedzie w dogodnym terminie</p>
                  </div>
                </div>
+               
                <button><Link to="/login">ODDAJ RZECZY</Link></button>
             </div>
         </section>

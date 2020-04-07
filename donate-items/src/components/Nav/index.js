@@ -1,10 +1,10 @@
 import React from "react";
 import {Link} from 'react-router-dom'
-//import {Link,Element} from 'react-scroll'
-//import banner from "../../assets/images/Home-Hero-Image.jpg"
-import Core from '../Core/index'
+import {Link as ScrollLink} from 'react-scroll'
 
-export default function Nav({Core}){
+
+
+export default function Nav(){
     return (
     <header> 
       <div className="container cont">
@@ -16,9 +16,9 @@ export default function Nav({Core}){
       </ul>
       <ul className="menu">
       <li>Start</li>
-      <li><Link to={Core} smooth={true}>O co chodzi?</Link></li>
-      <li>O nas</li>
-      <li>Fundacje i organizacje</li>
+      <li><ScrollLink to="core" smooth={true} duration={1200}>O co chodzi?</ScrollLink></li>
+      <li><ScrollLink to="aboutUs" smooth={true} duration={1200}>O nas</ScrollLink></li>
+      <li><ScrollLink to="toHelp" smooth={true} duration={1200}>Fundacje i organizacje</ScrollLink></li>
       <li>Kontakt</li>
       </ul>
       </div>

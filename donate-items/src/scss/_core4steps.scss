@@ -37,6 +37,15 @@
        height: 23.22rem;
        display: flex;
        justify-content: space-between;
+       &:before {
+        content:"";
+        background-color:#F0F1F1;
+        position: absolute;
+        height: 30%;
+        width: 100vw;
+        left: -1vw;
+        z-index: -1;
+    }
        .oneOfSteps{
            height: 16.5rem;
            img{
@@ -89,3 +98,10 @@
         }
   }
 } 
+
+// .back4Steps{
+//     background-color: $color1;
+//     position: relative;
+//     width: 100vw;
+//     right: 10vw;
+// }

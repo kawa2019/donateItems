@@ -10,12 +10,19 @@
   @import "./settings/font";
   @import "./settings/color";
   @import "./settings/general";
+  @import './settings/grid';
   @import "./homecontact";
   @import "./header";
   @import "./threeCol";
   @import "./core4steps"; 
+  @import './aboutUs';
+  @import './help';
 
   html{
     font-family: $font-base;
     font-size: 10px;   
 }
+
+// * {
+//   outline:5px solid red;
+// }
