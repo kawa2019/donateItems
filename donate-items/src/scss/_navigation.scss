@@ -1,0 +1,50 @@
+nav{
+    display: flex;
+    justify-content: flex-end;    
+    div{  
+        height: 7.34rem;
+        width:  50.7rem;
+        margin-top: 2.86rem;
+      .user{
+          display: flex;
+          justify-content: flex-end;
+          list-style-type: none;
+          li{
+              padding: 0.7rem 1.3rem;
+             // font: Regular 13px/79px Open Sans;
+              font-size: 1rem;
+              //line-height: 6.07rem;
+              letter-spacing: 0;
+              transition: border 0.3s ease-out;
+              &:hover{
+                opacity: 0.75;      
+                border: 0.1rem solid #FAD648;                     
+            }
+            a{
+                text-decoration: none;
+                color: #737373;
+            }
+             
+          }
+      }
+      .menu{
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 1.5rem;
+          //height: 3.24rem;
+          li{ 
+              list-style-type: none;
+              padding: 0.7rem 1.64rem;
+              transition: border 0.3s ease-out;
+              font-size: 1.4rem;
+              color: #3C3C3C;
+              cursor: pointer;
+             // display: block;
+             &:hover{
+                 opacity: 0.75;           
+                 border: 0.05rem solid #3C3C3C                        
+             }
+          }                
+      }
+    }       
+}
