@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Home from "./components/Home/index"
+import Nav from "./components/Nav/index";
 
 import {
   HashRouter,
@@ -17,9 +18,12 @@ import {
 const App=()=> {
   return (
     <HashRouter>
+      <Nav/>
+      <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/login"/>
       <Route path="/register"/>
+      </Switch>
     </HashRouter>
     );
 }

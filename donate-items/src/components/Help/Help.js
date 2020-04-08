@@ -170,9 +170,9 @@ export default function Help() {
                     </span>
                 </div>
                 <div className="whomSure">
-                    <button onClick={() => setHelper(1)} style={myBorder(1)}>Fundacjom</button>
-                    <button onClick={() => setHelper(2)} style={myBorder(2)}>Organizacjom pozarządowym</button>
-                    <button onClick={() => setHelper(3)} style={myBorder(3)}>Lokalnym zbiórkom</button>
+                    <button onClick={() => {setHelper(1);setCurrentPage(1)}} style={myBorder(1)}>Fundacjom</button>
+                    <button onClick={() => {setHelper(2);setCurrentPage(1)}} style={myBorder(2)}>Organizacjom pozarządowym</button>
+                    <button onClick={() => {setHelper(3);setCurrentPage(1)}} style={myBorder(3)}>Lokalnym zbiórkom</button>
                 </div>
                 {kindOfHelper(helper)}
             </div>
