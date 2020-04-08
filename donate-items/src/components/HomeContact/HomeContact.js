@@ -9,8 +9,9 @@ export default function HomeContact(){
       const [text,setText] = useState("")
       const [errorName,setErrorName] = useState("")
       const [errorEmail,setErrorEmail] = useState("")         
-      const [errorText,setErrorText] = useState("")    
-      console.log(errorText,errorName,errorEmail)
+      const [errorText,setErrorText] = useState("")  
+      const [validateSucess,setValidateSucess] = useState("")  
+      
       const validateEmail= (email)=>{
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase())}
@@ -30,6 +31,7 @@ export default function HomeContact(){
         setErrorName('');
         setErrorEmail("");
         setErrorText("")
+        setValidateSucess("")
         
         if (name.length == 0 || name.includes(" ")) {
             setErrorName('Podane imię jest nieprawidłowe');      
@@ -43,17 +45,23 @@ export default function HomeContact(){
         if (text.length < 120) {
             setErrorText('Wiadomość musi mieć conajmniej 120 znaków!');     
         }
-
+        
+        if (name || text || email){
+            setValidateSucess("Wiadomość została wysłana! Wkrótce się skontaktujemy.")
+        }
+        
         fetch("https://fer-api.coderslab.pl/v1/portfolio/contact",{
             method: "POST",
-            body: JSON.stringify({name,email,text}),
+            body: JSON.stringify({name,email,message: text}),
             headers: {
               "Content-Type": "application/json"
             }})
         .then(res=>res.json())
         .then(response=>{console.log(response)})
-        .catch(err=>console.log(err))     
+             
     }
+
+
     
     return(
         <>
@@ -62,10 +70,11 @@ export default function HomeContact(){
         <div className="container-general">  
         <form onSubmit={handleForm}>
             <div className="headerFoot">
-            <p>Skontaktuj się z nami</p>
+            <p className="contactTitle">Skontaktuj się z nami</p>
             <span className="main_dec">            
             </span>
             </div>
+            {validateSucess && <p className="validateSucess">{validateSucess}</p>}
             <div className="group_nick sameLabel" style={myBorder(errorName)}>
             <label>Wpisz swoje imię</label>
             <input type="text" placeholder="Krzysztof" value={name} onChange={(e)=>setName(e.target.value)}/>

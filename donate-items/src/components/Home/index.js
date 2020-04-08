@@ -6,7 +6,7 @@ import Core from '../Core/index';
 import AboutUs from '../AboutUs/AboutUs';
 import Help from '../Help/Help'
 
-  const Home =()=>{  
+  const Home =()=>{      
     return(
     <>
     <Main/>

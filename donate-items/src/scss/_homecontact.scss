@@ -40,7 +40,7 @@ footer{
         position: relative;
         //left: 68.7%;
         //top: 19.5%;
-         p{
+         .contactTitle{
            color: #3C3C3C;
            //text-align: center;
            font-family: $font-base;
@@ -137,4 +137,15 @@ footer{
             padding: 0.928rem 3.61rem;
         }          
     }
+}
+
+.validateSucess{
+    position: absolute;
+    color: #4caf50;
+    width: 17rem;
+    left: 9.8rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
