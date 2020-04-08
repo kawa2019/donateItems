@@ -1,3 +1,10 @@
+donateItems -This is the app where user can donate unnecessary items to trusted organization. It is a bit similar to charity organization BHF in the UK.The application is still developing to be totally use.
+Technologies:
+- HTML,CSS,Sass
+- JavaScript,React, React-router/app
+- NPM,ES6
+- Fetch
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
