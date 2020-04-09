@@ -1,0 +1,94 @@
+.register {
+    .container {
+        height: 59rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 9rem;
+        .container-form {
+            height: 42.25rem;
+            width: 37.5rem;
+            .headerFoot {
+                margin: 0 auto;
+                height: 7.54rem;
+                width: 17.6rem;
+                position: relative;
+                p {
+                    color: #3c3c3c;
+                    text-align: center;
+                    font-family: $font-base;
+                    font-size: 2.6rem;
+                    letter-spacing: -0.058rem;
+                    opacity: 1;
+                    line-height: 4.21rem;
+                    height: 3.98rem;
+                }
+                .main_dec {
+                    position: absolute;
+                    bottom: 0%;
+                    display: block;
+                    width: 17.58rem;
+                    height: 2.53rem;
+                    opacity: 1;
+                    background-image: url(../assets/images/Decoration.svg);
+                    background-size: contain;
+                }
+            }
+            .container-user {
+                height: 29.84rem;
+                margin-top: 4.7rem;
+                position: relative;
+                .data-user {
+                    border-top: 0.1rem solid transparent;
+                    margin: 0 auto;
+                    height: 23.45rem;
+                    width: 28.6rem;
+                    background-color: #f0f1f1;
+                    .data-user-one {
+                        position: relative;
+                        margin: 0 auto;
+                        margin-top: 2.4rem;
+                        width: 18.6rem;
+                        height: 4.4rem;
+                        border-bottom: 0.1rem solid #707070;
+                        font-family: "Semibold", "Open Sans";
+                        font-size: 1.1rem;
+                        color: #3c3c3c;
+                        input {
+                            border: none;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            outline: none;
+                            background-color: #f0f1f1;
+                        }
+                    }
+                }
+                .buttonsUser {
+                    height: 6.3rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    font-family: "Light", "Open Sans";
+                    font-size: 1.3rem;
+                    color: #000000;
+                    input {
+                        border: 0.75px solid #3c3c3c;
+                        background-color: #fff;
+                        height: 2.56rem;
+                        width: 8.7rem;
+                    }
+                    button {
+                        height: 2.56rem;
+                        width: 8.7rem;
+                        border: 0.75px solid #3c3c3c;
+                        background-color: #fff;
+                        a {
+                            text-decoration: none;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

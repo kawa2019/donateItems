@@ -1,0 +1,51 @@
+.loggedOut{
+    
+    margin-top: 9rem;  
+    .container-loggedOut{
+        height: 18.1rem;
+        width: 30.7rem;
+        margin: 0 auto;
+        position: relative;
+        .headerFoot {
+            margin: 0 auto;
+            height: 12rem;
+            //width: 30.7rem;
+            position: relative;
+            p {
+                color: #3c3c3c;
+                text-align: center;
+                font-family: $font-base;
+                font-size: 2.6rem;
+                letter-spacing: -0.058rem;
+                opacity: 1;
+                line-height: 4.21rem;
+                height: 7.54rem;
+            }
+            .main_dec {
+                position: absolute;
+                bottom: 0%;
+                display: block;
+                width: 17.58rem;
+                height: 2.53rem;    
+                opacity: 1;
+                left: 6.55rem;
+                background-image: url(../assets/images/Decoration.svg);
+                background-size: contain;
+            }
+        }
+        button {
+            position: absolute;
+            height: 2.56rem;
+            width: 8.7rem;
+            border: 0.75px solid #3c3c3c;
+            background-color: #fff;
+            bottom: 0;
+            left: 11rem;
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+        
+    }
+}

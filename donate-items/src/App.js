@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Home from "./components/Home/index"
 import Navigation from './components/Nav/Navigation'
 import Login from './components/Login/Login'
+import Register from './components/Register/Register'
+import LoggedOut from './components/LoggedOut/LoggedOut'
 
 import {
   HashRouter,
@@ -23,7 +24,8 @@ const App=()=> {
       <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/login" component={Login}/>
-      <Route path="/register"/>
+      <Route path="/register" component={Register}/>
+      <Route path="/loggedOut" component={LoggedOut}/>
       </Switch>
     </HashRouter>
     );

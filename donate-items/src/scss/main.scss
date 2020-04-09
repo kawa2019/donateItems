@@ -19,6 +19,8 @@
   @import "./core4steps"; 
   @import './aboutUs';
   @import './help';
+  @import 'register';
+  @import 'loggedOut';
 
   html{
     font-family: $font-base;
