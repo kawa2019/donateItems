@@ -2,7 +2,7 @@ import React from "react";
 import HomeContact from "../HomeContact/HomeContact";
 import Main from '../Main/Main'
 import ThreeCol from "../ThreeCol/index";
-import Core from '../Core/index';
+import Steps4 from '../Steps4/Steps4';
 import AboutUs from '../AboutUs/AboutUs';
 import Help from '../Help/Help'
 
@@ -11,7 +11,7 @@ import Help from '../Help/Help'
     <>
     <Main/>
     <ThreeCol/>
-    <Core/>
+    <Steps4/>
     <AboutUs/>
     <Help/>
     <HomeContact/>

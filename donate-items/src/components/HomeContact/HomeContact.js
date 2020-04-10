@@ -46,7 +46,7 @@ export default function HomeContact(){
             setErrorText('Wiadomość musi mieć conajmniej 120 znaków!');     
         }
         
-        if (name || text || email){
+        if (name && text && email){
             setValidateSucess("Wiadomość została wysłana! Wkrótce się skontaktujemy.")
         }
         
@@ -75,22 +75,25 @@ export default function HomeContact(){
             </span>
             </div>
             {validateSucess && <p className="validateSucess">{validateSucess}</p>}
-            <div className="group_nick sameLabel" style={myBorder(errorName)}>
+            <div className="group_nick sameLabel" >
             <label>Wpisz swoje imię</label>
-            <input type="text" placeholder="Krzysztof" value={name} onChange={(e)=>setName(e.target.value)}/>
+            <input type="text" placeholder="Krzysztof" value={name} style={myBorder(errorName)} onChange={(e)=>setName(e.target.value)}/>
+            {errorName && <p style={{color: "red" }}>{errorName}</p>}
             </div>
-            <div className="group_nick sameLabel email" style={myBorder(errorEmail)}>
+            <div className="group_nick sameLabel email" >
             <label>Wpisz swój email</label>
-            <input type="email" placeholder="abc@xyz.pl" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+            <input type="email" placeholder="abc@xyz.pl" value={email} style={myBorder(errorEmail)} onChange={(e)=>setEmail(e.target.value)}/>
+            {errorEmail && <p style={{color: "red"}}>{errorEmail}</p>}
             </div>
-            {errorName && <p style={{color: "red",display:"inline-block"}}>{errorName}</p>}
-            {errorEmail && <p style={{color: "red",display:"inline-block",marginLeft:"5rem"}}>{errorEmail}</p>}
-            <div className="group_text sameLabel" style={myBorder(errorText)}>
+           
+           
+            <div className="group_text sameLabel" >
             <label>Wpisz swoją wiadomość</label>         
-            <textarea  value={text} onChange={(e)=>setText(e.target.value)}
+            <textarea  value={text} onChange={(e)=>setText(e.target.value)} style={myBorder(errorText)}
              placeholder ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo consequat."/>
-            </div>
             {errorText && <p style={{color: "red"}}>{errorText}</p>}
+            </div>
+            
             <input className="sendMessage" type="submit" value="Wyślij"/>
         </form>
         <div className="copyright">

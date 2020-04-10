@@ -1,107 +1,103 @@
-.steps{
-   margin-top: 4rem; 
-   height: 44.58rem;
-//    .main_hed{
-//        height: 4.35rem;
-//        width: 26rem;
-//    }
-.headerFoot{
-    margin: 0 auto;
-    height: 7.86rem;
-    width: 30.9rem;
-    position: relative;
-     p{
-       color: #3C3C3C;
-       font-family: $font-base;
-       font-size: 2.6rem; 
-       letter-spacing: -0.058rem;   
-       opacity: 1;
-       display: inline-block;
-       line-height: 4.21rem; 
-       height: 3.98rem;
-     }
-     .main_dec{
-         position: absolute;
-         bottom: 0%;
-         left: 15%;                  
-         display: block;
-         width: 17.58rem;
-         height: 2.53rem;
-         opacity: 1;
-         background-image: url(../assets/images/Decoration.svg);
-         background-size: contain;
-     }
-   }  
-   .allSteps{
-       margin-top: 2rem;
-       height: 23.22rem;
-       display: flex;
-       justify-content: space-between;
-       &:before {
-        content:"";
-        background-color:#F0F1F1;
-        position: absolute;
-        height: 30%;
-        width: 100vw;
-        left: -1vw;
-        z-index: -1;
+.steps {
+    margin-top: 4rem;
+    height: 46.58rem;
+    //    .main_hed{
+    //        height: 4.35rem;
+    //        width: 26rem;
+    //    }
+    .headerFoot {
+        margin: 0 auto;
+        height: 7.86rem;
+        width: 30.9rem;
+        position: relative;
+        p {
+            color: #3c3c3c;
+            font-family: $font-base;
+            font-size: 2.6rem;
+            letter-spacing: -0.058rem;
+            opacity: 1;
+            display: inline-block;
+            line-height: 4.21rem;
+            height: 3.98rem;
+        }
+        .main_dec {
+            position: absolute;
+            bottom: 0%;
+            left: 15%;
+            display: block;
+            width: 17.58rem;
+            height: 2.53rem;
+            opacity: 1;
+            background-image: url(../assets/images/Decoration.svg);
+            background-size: contain;
+        }
     }
-       .oneOfSteps{
-           height: 16.5rem;
-           img{
-               margin: 0 auto;
-               display: block;
-           }
-           .head{
-               font-size: 1.43rem;
-               padding: 1.1rem;
-               position: relative;
-               &::after{
-                   content: "";
-                   position: absolute;
-                   left: 35%;
-                   bottom: 0;
-                   width: 30%;
-                   height: 0.05rem;
-                   background: #3C3C3C;
-               }
-           }
-           .headText{
-            font-size: 1.3rem;
-            width: 14rem;
-            margin:0 auto;
-            margin-top: 2rem;
-           }
-           p{
-            text-align: center;
-            color: #3C3C3C;
-           }
-       }
+    .allSteps {
+        margin-top: 2rem;
+        height: 23.22rem;
+        display: flex;
+        justify-content: space-between;
+        &:before {
+            content: "";
+            background-color: $color1;
+            position: absolute;
+            height: 30%;
+            width: 100vw;
+            left: -1vw;
+            z-index: -1;
+        }
+        .oneOfSteps {
+            height: 16.5rem;
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+            .head {
+                font-size: 1.43rem;
+                padding: 1.1rem;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 35%;
+                    bottom: 0;
+                    width: 30%;
+                    height: 0.05rem;
+                    background: $color5;
+                }
+            }
+            .headText {
+                font-size: 1.3rem;
+                width: 14rem;
+                margin: 0 auto;
+                margin-top: 2rem;
+            }
+            p {
+                text-align: center;
+                color: #3c3c3c;
+            }
+        }
     }
-    button{
-        height: 9.26rem;
-        width: 26.85rem;
+    button {
         display: block;
-        padding: 0.3rem 4rem; 
         font-family: "Light";
         font-size: 3.2rem;
-        transition: border 0.3s ease-out;
+        border: 0.05rem solid $color5;
+        transition: 0.3s ease-out;
+        background-color: #FFF;
         cursor: pointer;
         margin: 0 auto;
-        &:hover{
-            opacity: 0.75;           
-            border: 0.05rem solid #3C3C3C                        
+        margin-top: 3.5rem;
+        &:hover {
+            opacity: 0.5;
         }
-        a{
+        a {
+            height: 9.26rem;
+            width: 26.85rem;
+            padding: 0.9rem 4rem;
+            display: inline-block;
             text-decoration: none;
-            color: #3C3C3C;
+            color: $color5;
         }
-  }
-} 
-
-// .back4Steps{
-//     background-color: $color1;
-//     position: relative;
-//     width: 100vw;
-//     right: 10vw;
-// }
+    }
+}

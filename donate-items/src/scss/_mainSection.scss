@@ -1,75 +1,73 @@
-main{
+main {
     height: 83.66vh;
-    .container{
-            &:before {
-                content:"";
-                background: url(../assets/images/Home-Hero-Image.jpg) -25.42% 0 no-repeat;
-                background-size: 46.6% 93.86%;
-                position: absolute;
-                height: 73.86rem;
-                width: 140rem;
-                left: 0;
-                bottom: -2.7rem;
-                z-index: -1;
-            }
+    .container {
+        &:before {
+            content: "";
+            background: url(../assets/images/Home-Hero-Image.jpg) -25.42% 0 no-repeat;
+            background-size: 46.6% 93.86%;
+            position: absolute;
+            height: 73.86rem;
+            width: 140rem;
+            left: 0;
+            bottom: -2.7rem;
+            z-index: -1;
+        }
     }
-    .intro{
+    .intro {
         display: flex;
         justify-content: flex-end;
-        .begin{
+        .begin {
             height: 27rem;
             width: 58.6rem;
             margin-right: 9rem;
             margin-top: 16.2rem;
             position: relative;
-              p{
-                  height: 8.25rem;
-                  &::first-line {
-                      text-align: center;
-                    }  
-                  font-size: 3.40rem; 
-                  letter-spacing: -0.058rem; 
-                  line-height: 4.21rem;   
-                  color: #3C3C3C;  
-              }
-              span{
-              display: block;    
-              width: 17.58rem;
-              height: 2.53rem;
-              opacity: 1;
-              background-image: url(../assets/images/Decoration.svg);
-              background-size: contain;
-              position: absolute;
-              left: 32%;
-              margin-top: 1.93rem;
-        }
-        .buttons{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 8.7rem;
-            button{
-                height: 9.26rem;
-                width: 26.85rem;
+            p {
+                height: 8.25rem;
+                &::first-line {
+                    text-align: center;
+                }
+                font-size: 3.4rem;
+                letter-spacing: -0.058rem;
+                line-height: 4.21rem;
+                color: $color5;
+            }
+            span {
                 display: block;
-                padding: 0.3rem 4rem; 
-                font-family: "Light";
-                font-size: 3.2rem;
-                transition: border 0.3s ease-out;
-               // font: Light 36px/45px Open Sans;
-                
-                cursor: pointer;
-               // transition: border 0.05rem solid #3C3C3C 3s;
-               background-color: #ffffff;
-               &:hover{
-                opacity: 0.75;           
-                border: 0.05rem solid #3C3C3C                        
+                width: 17.58rem;
+                height: 2.53rem;
+                opacity: 1;
+                background-image: url(../assets/images/Decoration.svg);
+                background-size: contain;
+                position: absolute;
+                left: 32%;
+                margin-top: 1.93rem;
             }
-            a{
-                text-decoration: none;
-                color: #3C3C3C;
-            }
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 8.7rem;
+                button {
+                    display: block;
+                    font-family: "Light";
+                    font-size: 3.2rem;
+                    border: 0.05rem solid $color5;
+                    transition: 0.3s ease-out;
+                    cursor: pointer;
+                    background-color: #ffffff;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color5;
+                        height: 9.26rem;
+                        width: 26.85rem;
+                        padding: 0.9rem 4rem;
+                        display: inline-block;
+                    }
+                }
             }
         }
-      }
     }
 }

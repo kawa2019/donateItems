@@ -67,12 +67,22 @@ export default function Help() {
         pageNumbers.push(i);
     }
 
+    const myBorderPage = (param1) => {
+        let style = {}
+        if (currentPage == param1) {
+            return style = {
+                border: "0.075rem solid #3c3c3c"
+            }
+        }
+    }
+
     const renderPageNumbers = pageNumbers.map(number => {
         return (
             <span
                 className="page"
                 key={number}
                 id={number}
+                style={myBorderPage(number)}
                 onClick={e => setCurrentPage(e.target.id)}
             >
                 {number}
@@ -91,6 +101,7 @@ export default function Help() {
                 className="page"
                 key={number}
                 id={number}
+                style={myBorderPage(number)}
                 onClick={e => setCurrentPage(e.target.id)}
             >
                 {number}
@@ -103,21 +114,6 @@ export default function Help() {
         pageNumbersL.push(i);
     }
 
-    const renderPageNumbersL = pageNumbersL.map(number => {
-        if (pageNumbersL.length > 1) {
-            return (
-                <span
-                    className="page"
-                    key={number}
-                    id={number}
-                    onClick={e => setCurrentPage(e.target.id)}
-                >
-                    {number}
-                </span>
-            );
-        }
-    });
-
     const myBorder = (param) => {
         let style = {}
         if (helper == param) {
@@ -126,6 +122,27 @@ export default function Help() {
             }
         }
     }
+
+   
+
+
+    const renderPageNumbersL = pageNumbersL.map(number => {
+        if (pageNumbersL.length > 1) {
+            return (
+                <span
+                    className="page"
+                    key={number}
+                    id={number}
+                    style={myBorderPage(number)}
+                    onClick={e => setCurrentPage(e.target.id)}
+                >
+                    {number}
+                </span>
+            );
+        }
+    });
+
+    
 
     const kindOfHelper = () => {
 

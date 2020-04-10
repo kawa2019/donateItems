@@ -6,7 +6,7 @@ import circle from "../../assets/images/Icon-4.svg"
 
 import {Link} from "react-router-dom"
 
-export default function Core(){
+export default function Steps4(){
     return (
         <section className="steps" id="core">
             <div className="container">

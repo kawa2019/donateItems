@@ -24,8 +24,8 @@ export default function () {
                             <li><Link to="/register">Zarejestruj się</Link></li>
                         </ul>
                         <ul className="menu">
-                            <li className="start" style={myBorder(startBorder)}
-                            ><Link to="/" onClick={()=>setStartBorder(false)}>Start</Link></li>
+                            <li style={myBorder(startBorder)}
+                            ><Link to="/" onClick={()=>setStartBorder(false)} className="start">Start</Link></li>
                             <li><ScrollLink to="core" smooth={true} duration={1200}>O co chodzi?</ScrollLink></li>
                             <li><ScrollLink to="aboutUs" smooth={true} duration={1200}>O nas</ScrollLink></li>
                             <li><ScrollLink to="toHelp" smooth={true} duration={1200}>Fundacje i organizacje</ScrollLink></li>

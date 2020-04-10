@@ -1,7 +1,6 @@
-.loggedOut{
-    
-    margin-top: 9rem;  
-    .container-loggedOut{
+.loggedOut {
+    margin-top: 9rem;
+    .container-loggedOut {
         height: 18.1rem;
         width: 30.7rem;
         margin: 0 auto;
@@ -9,15 +8,13 @@
         .headerFoot {
             margin: 0 auto;
             height: 12rem;
-            //width: 30.7rem;
             position: relative;
             p {
-                color: #3c3c3c;
+                color: $color5;
                 text-align: center;
                 font-family: $font-base;
                 font-size: 2.6rem;
                 letter-spacing: -0.058rem;
-                opacity: 1;
                 line-height: 4.21rem;
                 height: 7.54rem;
             }
@@ -26,8 +23,7 @@
                 bottom: 0%;
                 display: block;
                 width: 17.58rem;
-                height: 2.53rem;    
-                opacity: 1;
+                height: 2.53rem;
                 left: 6.55rem;
                 background-image: url(../assets/images/Decoration.svg);
                 background-size: contain;
@@ -37,8 +33,8 @@
             position: absolute;
             height: 2.56rem;
             width: 8.7rem;
-            border: 0.75px solid #3c3c3c;
-            background-color: #fff;
+            border: 0.75px solid $color5;
+            background-color: #FFF;
             bottom: 0;
             left: 11rem;
             a {
@@ -46,6 +42,5 @@
                 color: #000000;
             }
         }
-        
     }
 }

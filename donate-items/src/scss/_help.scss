@@ -1,5 +1,5 @@
 #toHelp {
-    height: 61.6rem;
+    height: 64.6rem;
     margin-top: 5rem;
     .container-help {
         width: 92.8rem;
@@ -10,7 +10,7 @@
             width: 30.9rem;
             position: relative;
             p {
-                color: #3c3c3c;
+                color: $color5;
                 font-family: $font-base;
                 font-size: 2.6rem;
                 letter-spacing: -0.058rem;
@@ -45,66 +45,69 @@
                 padding: 1rem 2rem;
                 text-align: center;
                 font-size: 1.6rem;
-                color: #3C3C3C;        
+                color: $color5;
                 cursor: pointer;
-                background-color: #ffffff;
-                border: none;
+                background-color: #FFF;
+                border: 0.075rem solid transparent;
+                outline: none;
                 &:hover {
                     opacity: 0.75;
-                    border: 0.075rem solid #3c3c3c;
+                    border: 0.075rem solid $color5;
                 }
             }
         }
-       .helpInfo{
-           height: 42.5rem;
+        .helpInfo {
+            height: 42.5rem;
             margin-top: 3rem;
-           .briefInfo{
-            height: 6.7rem;
-            width: 44.2rem;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.4rem;
-            color: #3C3C3C;
-           }
-           .foundation{
-               margin-top: 4.73rem;
-               height: 5.8rem;
-               display: flex;
-               justify-content: space-between;
-               border-bottom: 0.075rem solid #3c3c3c;
-               .nameFoundation{
-                font-family: "Light","Merriweather";
-                font-size: 1.7rem;
-                color: #3C3C3C;
-               }
-               .aimFoundation{
-                font-family: "Light" ,"Italic","Merriweather";
-                font-size: 1.3rem;
-                color: #3C3C3C;
-               }
-               .itmesForFoundation{
-                   margin-top: 1.2rem;
-                   margin-right: 1rem;
-                   font-size: 1.3rem;
-                   font-family: "Light","Merriweather";
-                   color: #3C3C3C;
-               }
-           }
-         .pagination{
-            margin-top: 3rem;
-            text-align: center;
-            .page{
-                border: 1px solid transparent;
-                transition: border 0.3s ease-out; 
-                font-size: 1.3rem;
-                padding: 0.8rem 1.5rem;
-                
-                color: #3C3C3C;             
-                &:hover{
-                border: 1px solid #707070;
-            } 
+            .briefInfo {
+                height: 6.7rem;
+                width: 44.2rem;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 1.4rem;
+                color: $color5;
+            }
+            .foundation {
+                margin-top: 4.73rem;
+                height: 5.8rem;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 0.075rem solid $color5;
+                .nameFoundation {
+                    font-family: "Light", "Merriweather";
+                    font-size: 1.7rem;
+                    color: $color5;
+                }
+                .aimFoundation {
+                    font-family: "Light", "Italic", "Merriweather";
+                    font-size: 1.3rem;
+                    color: $color5;
+                }
+                .itmesForFoundation {
+                    margin-top: 1.2rem;
+                    margin-right: 1rem;
+                    font-size: 1.3rem;
+                    font-family: "Light", "Merriweather";
+                    color: $color5;
+                }
+            }
+            .pagination {
+                margin-top: 3rem;
+                text-align: center;
+                .page {
+                    border: 1px solid transparent;
+                    transition: border 0.3s ease-out;
+                    font-size: 1.3rem;
+                    padding: 0.8rem 1.5rem;
+                    display: inline-block;
+                    color: $color5;
+                    cursor: pointer;
+                    &:hover {
+                        border: 1px solid $color4;
+                        opacity: 0.5;
+                    }
+                }
+            }
         }
-         }
-       } 
     }
 }
