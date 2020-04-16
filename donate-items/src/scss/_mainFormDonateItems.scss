@@ -1,0 +1,58 @@
+#mainForm {
+    height: 83.66vh;
+    .container {
+        &:before {
+            content: "";
+            background: url(../assets/images/Form-Hero-Image.jpg) no-repeat;
+            background-size: 76.6% 93.86%;
+            position: absolute;
+            height: 78.86rem;
+            width: 100rem;
+            left: 0;
+            bottom: -4.7rem;
+            z-index: -1;
+        }
+        .intro {
+            .begin {
+                margin-top: 6.2rem;
+                .titleOfBegin {
+                    text-align: center;
+                    margin-top: 6rem;
+                    font-family: "Light" "Open Sans";
+                }
+                .steps4 {
+                    display: flex;
+
+                    .steps4One {
+                        margin: 0 auto;
+                        font-size: 1.4rem;
+                        font-family: "Light" "Open Sans";
+                        color: #3c3c3c;
+                        position: relative;
+                        span {
+                            display: block;
+                            text-align: center;
+                            font-size: 2.4rem;
+                        }
+                        p {
+                            margin-top: 1.5rem;
+                            font-size: 2rem;
+                            width: 9rem;
+                            height: 4rem;
+                            text-align: center;
+                        }
+                        .toRotateSteps4 {
+                            position: absolute;
+                            transform: rotate(45deg);
+                            height: 12rem;
+                            width: 12rem;
+                            border: 0.075rem solid #3c3c3c;
+                            top: 0rem;
+                            left: -1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

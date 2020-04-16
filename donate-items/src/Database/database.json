@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "email": "kamil.ku@vp.pl",
+      "password": "$2a$10$iRWFeN1/7rMNDbvEYFj6oezYPXBXG/BD9sOQ.mFuqr0hrefFSHGzO",
+      "id": "kamil.ku@vp.pl"
+    },
+    {
+      "email": "kaml.ku@vp.pl",
+      "password": "$2a$10$TdvlSjdwnwBtxK7XVVQxV.gCMzVetQX1zUe06b27xXmXOwKTwAeQG",
+      "id": "kaml.ku@vp.pl"
+    },
+    {
+      "email": "kamilo.ku@vp.pl",
+      "password": "$2a$10$eAfDNhL1l3uO94HAqTMer.8W0G1TFlhotuSS.BQMuxCDWiaVHGIja",
+      "id": "kamilo.ku@vp.pl"
+    },
+    {
+      "email": "kamil.kuu@vp.pl",
+      "password": "$2a$10$7WCpyujNBf8knPWG5HM35.Zpck5IraakToGHH2o0NXhxSXnUGh3CG",
+      "id": "kamil.kuu@vp.pl"
+    },
+    {
+      "email": "karol.ku@vp.pl",
+      "password": "$2a$10$O6rFWUsG.9mGJXbfUVp0muBxQnEOgnpLC8knV6cHbc2VTkOcP1vtm",
+      "id": "karol.ku@vp.pl"
+    },
+    {
+      "email": "m@vp.pl",
+      "password": "$2a$10$Sd1x/G.qTwWnFX7wftgmrOdDy1sN9JjRxuFYvK6jhwZ/vPz4nFNpu",
+      "id": "m@vp.pl"
+    }
+  ]
+}

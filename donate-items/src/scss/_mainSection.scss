@@ -3,11 +3,11 @@ main {
     .container {
         &:before {
             content: "";
-            background: url(../assets/images/Home-Hero-Image.jpg) -25.42% 0 no-repeat;
-            background-size: 46.6% 93.86%;
+            background: url(../assets/images/Home-Hero-Image.jpg) -91.42% 0 no-repeat;
+            background-size: 76.6% 93.86%;
             position: absolute;
             height: 73.86rem;
-            width: 140rem;
+            width: 100rem;
             left: 0;
             bottom: -2.7rem;
             z-index: -1;
@@ -22,7 +22,7 @@ main {
             margin-right: 9rem;
             margin-top: 16.2rem;
             position: relative;
-            p {
+            .titleOfBegin {
                 height: 8.25rem;
                 &::first-line {
                     text-align: center;
@@ -32,7 +32,7 @@ main {
                 line-height: 4.21rem;
                 color: $color5;
             }
-            span {
+            .decoration {
                 display: block;
                 width: 17.58rem;
                 height: 2.53rem;

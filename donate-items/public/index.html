@@ -39,5 +39,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC9ayviGmYcg9N7Fmx6ynPEoTush69OHlk",
+    authDomain: "donateitems-12766.firebaseapp.com",
+    databaseURL: "https://donateitems-12766.firebaseio.com",
+    projectId: "donateitems-12766",
+    storageBucket: "donateitems-12766.appspot.com",
+    messagingSenderId: "560153332070",
+    appId: "1:560153332070:web:5703dcc3d4a2031d6a60a7",
+    measurementId: "G-YW2L3PF6JS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
