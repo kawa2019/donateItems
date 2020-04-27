@@ -5,9 +5,22 @@ Technologies:
 - NPM,ES6
 - Fetch
 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+### `npm i`
+
+This installs node modules.You must use it in order to go next steps.
+
+Go to another terminal and in src/Database directory you must run JSON Server:
+ 
+ ### `json-server -p 4000 database.json -m ../../node_modules/json-server-auth`
+
+The page will be contains data from JSON Server
+
+Return to first terminal.
 
 In the project directory, you can run:
 
