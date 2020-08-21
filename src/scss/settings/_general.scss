@@ -1,6 +1,18 @@
-.container{
+.container {
   width: 1574px;
   margin: 0 auto;
 }
 
 $main-border: 0.75px solid $main-color;
+$main-transition: opacity 0.3s ease-out;
+
+@mixin settingBorder($color) {
+  border: $main-border;
+  border-color: $color;
+}
+
+@mixin main-hover($color: $main-color) {
+  &:hover {
+    @include settingBorder($color);
+  }
+}

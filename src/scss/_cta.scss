@@ -4,7 +4,7 @@
     font-size: 36px;
     line-height: 36px;
     border: $main-border;
-    transition: opacity 0.3s ease-out;
+    transition: $main-transition;
     cursor: pointer;
     background-color: #fff;
     color: $main-color;

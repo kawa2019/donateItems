@@ -1,25 +1,20 @@
-import React from "react"
+import React from "react";
+import { OneCol } from './OneCol';
 
-export default function ThreeCol(){
-    return(
+export const ThreeColumns = () => {
+
+   const threeColArr = [{ num: 10, kind: "ODDANYCH WORKÓW", text: "Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat." },
+   { num: 5, kind: "WSPARTYCH ORGANIZACJI", text: "Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat." },
+   { num: 7, kind: "ZORGANIZOWANY ZBIÓREK", text: "Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat." }]
+   return (
       <section className="three_col">
-            <div className="container statistics">
-              <div className="oneOfThree">
-                 <span>10</span>
-                 <h3>Oddanych worków</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
-              </div>  
-              <div className="oneOfThree">
-                 <span>5</span>
-                 <h3>WSPARTYCH ORGANIZACJI</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
-              </div>  
-              <div className="oneOfThree">
-                 <span>7</span>
-                 <h3>ZORGANIZOWANY ZBIÓREK</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
-              </div>  
-            </div>
+         <div className="container three_colStatistics">
+            {threeColArr.map((col, index) => {
+               return (
+                  <OneCol col={col} key={index} />
+               )
+            })}
+         </div>
       </section>
-     )
+   )
 }

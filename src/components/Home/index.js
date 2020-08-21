@@ -3,7 +3,7 @@ import { Decor } from './Decor';
 import { CTA } from './CTA';
 import HomeContact from "../HomeContact/HomeContact";
 import { Main } from '../Main/Main'
-import ThreeCol from "../ThreeCol/index";
+import {ThreeColumns} from "../ThreeCol/index";
 import Steps4 from '../Steps4/Steps4';
 import AboutUs from '../AboutUs/AboutUs';
 import Help from '../Help/Help'
@@ -14,7 +14,7 @@ export const Home = () => {
     return (
         <>
             <Main decor={<Decor text={decorText} />} cta1={<CTA text={textBtnMain.text1} />} cta2={<CTA text={textBtnMain.text2} />} />
-            <ThreeCol />
+            <ThreeColumns />
             <Steps4 />
             <AboutUs />
             <Help />

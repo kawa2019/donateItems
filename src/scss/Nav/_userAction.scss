@@ -2,31 +2,26 @@
     width: 180px;
     height: 36px;
     &:hover li a {
-      border: none;
+        border: none;
     }
     li,
     a {
-      display: inline-block;
+        display: inline-block;
     }
     li {
-      a {
-        font-size: 13px;
-        color: $user-lightColor;
-        text-decoration: none;
-        line-height: 36px;
-        width: 90px;
-        height: 36px;
-        text-align: center;
-        transition: opacity 0.3s ease-out;
-        &:hover {
-          opacity: 0.5;
-          border: $main-border;
-          border-color: #fad648;
+        a {
+            font-size: 13px;
+            color: $user-lightColor;
+            text-decoration: none;
+            line-height: 36px;
+            width: 90px;
+            height: 36px;
+            text-align: center;
+            transition: $main-transition;
+            @include main-hover($color: #fad648);
         }
-      }
     }
     .nav_userBorder {
-      border: $main-border;
-      border-color: #fad648;
+        @include settingBorder($color: #fad648);
     }
-  }
+}
