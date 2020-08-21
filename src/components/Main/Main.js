@@ -3,19 +3,16 @@ import { Link } from "react-router-dom"
 
 
 
-export default function Main() {
+export const Main = ({ decor, cta1, cta2 }) => {
 
   return (
     <main>
       <div className="container">
-        <div className="intro">
-          <div className="begin">
-            <p className="titleOfBegin">Zacznij pomagać!<br />Oddaj niechciane rzeczy w zaufane ręce</p>
-            <span className="decoration"></span>
-            <div className="buttons">
-              <button><Link to="/login">ODDAJ RZECZY</Link></button>
-              <button><Link to="/login">ZORGANIZUJ ZBIÓRKĘ</Link></button>
-            </div>
+        <div className="main_content">
+          {decor}
+          <div className="buttons">
+            {cta1}
+            {cta2}
           </div>
         </div>
       </div>
