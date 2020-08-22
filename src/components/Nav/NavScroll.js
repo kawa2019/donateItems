@@ -6,7 +6,7 @@ export const NavScroll = ({ startBorder, setStartBorder }) => {
         <ul className="menu" onClick={() => setStartBorder(true)}>
             <li
             ><Link to="/" className={startBorder && "nav_menuBorder"}>Start</Link></li>
-            <li><ScrollLink to="core" smooth={true} duration={1200}>O co chodzi?</ScrollLink></li>
+            <li><ScrollLink to="steps4" smooth={true} duration={1200}>O co chodzi?</ScrollLink></li>
             <li><ScrollLink to="aboutUs" smooth={true} duration={1200}>O nas</ScrollLink></li>
             <li><ScrollLink to="toHelp" smooth={true} duration={1200}>Fundacje i organizacje</ScrollLink></li>
             <li><ScrollLink to="footer" smooth={true} duration={1200}>Kontakt</ScrollLink></li>

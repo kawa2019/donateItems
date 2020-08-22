@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-import {Home} from "./components/Home/index"
+import {Home} from "./components/Home/Home"
 import {Navigation} from './components/Nav/Navigation'
 import Login from './components/Login/Login'
 import Register from './components/Register/Register'

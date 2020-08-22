@@ -1,0 +1,25 @@
+.steps4_wrapper {
+    margin-top: 55px;
+    height: 624px;
+    position: relative;
+    &:before {
+        content: "";
+        background-color: #f0f1f1;
+        position: absolute;
+        height: 325px;
+        width: 100%;
+        top: 144px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .container {
+        width: 1072px;
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+    }
+}
