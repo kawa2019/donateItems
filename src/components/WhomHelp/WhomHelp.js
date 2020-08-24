@@ -4,7 +4,7 @@ import { BtnsWhomHelp } from './BtnsWhomHelp';
 import { useWhomHelpLogic } from './useWhomHelpLogic';
 
 export const WhomHelp = ({ decor }) => {
-    const {allInstitutionArr, currentToShowArr,
+    const {allInstitutionArr, currentPage, currentToShowArr, 
         setCurrentPage, type, setType, pageNumbers} = useWhomHelpLogic()
 
     return (
@@ -13,7 +13,7 @@ export const WhomHelp = ({ decor }) => {
                 {decor}
                 <BtnsWhomHelp allInstitutionArr={allInstitutionArr} type={type} setType={setType} setCurrentPage={setCurrentPage} />
                 <MainInfo introText={allInstitutionArr[type].introText} currentToShowArr={currentToShowArr}
-                    pageNumbers={pageNumbers} setCurrentPage={setCurrentPage} />
+                    pageNumbers={pageNumbers} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
             </div>
         </section>
     )

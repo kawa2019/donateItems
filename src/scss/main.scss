@@ -5,9 +5,9 @@
 @import "./settings/font";
 @import "./settings/color";
 @import "./settings/general";
-@import "./Nav/navigation";
-@import "./Nav/userAction";
-@import "./Nav/navScroll";
+@import "./nav/navigation";
+@import "./nav/userAction";
+@import "./nav/navScroll";
 @import "./login";
 @import "./homecontact";
 @import "./decor";
@@ -17,7 +17,10 @@
 @import "./steps4/steps4";
 @import "./steps4/steps4_allSteps";
 @import "./aboutUs";
-@import "./whomHelp";
+@import "./whomHelp/whomHelp";
+@import "./whomHelp/btnsWhomHelp";
+@import "./whomHelp/typeHelp";
+@import "./whomHelp/pagination";
 @import "register";
 @import "loggedOut";
 @import "mainFormDonateItems";

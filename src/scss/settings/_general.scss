@@ -4,6 +4,7 @@
 }
 
 $main-border: 0.75px solid $main-color;
+$alt-border: 1px solid #707070;
 $main-transition: opacity 0.3s ease-out;
 
 @mixin settingBorder($color) {

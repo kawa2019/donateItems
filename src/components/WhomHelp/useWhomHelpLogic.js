@@ -26,5 +26,5 @@ export const useWhomHelpLogic = () => {
     for (let i = 1; i <= Math.ceil(allInstitutionArr[type].allInfo.length / objectsPerPage); i++) {
         pageNumbers.push(i);
     }
-    return {allInstitutionArr, setCurrentPage, type, setType, currentToShowArr, pageNumbers}
+    return {allInstitutionArr, currentPage, setCurrentPage, type, setType, currentToShowArr, pageNumbers}
 }

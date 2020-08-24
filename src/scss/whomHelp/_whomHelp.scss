@@ -1,0 +1,19 @@
+#whomHelp {
+    margin-top: 70px;
+    .container {
+        width: 1344px;
+        .mainInfo {
+            margin-top: 70px;
+            color: $main-color;
+            .introText {
+                width: 640px;
+                height: 94px;
+                margin: 0 auto;
+                margin-bottom: 66px;
+                text-align: center;
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+}
