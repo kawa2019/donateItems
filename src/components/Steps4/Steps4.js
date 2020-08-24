@@ -1,5 +1,5 @@
 import React from 'react';
-import { OneStep } from './OneStep';
+import {AllSteps} from './AllSteps'
 import t_shirt from "../../assets/images/Icon-1.svg"
 import pack from "../../assets/images/Icon-2.svg"
 import search from "../../assets/images/Icon-3.svg"
@@ -14,11 +14,7 @@ export const Steps4 = ({ decor, cta1 }) => {
         <section className="steps4_wrapper" id="steps4">
             <div className="container">
                 {decor}
-                <div className="steps4_allSteps">
-                    {steps4_allStepsArr.map(step => {
-                        return <OneStep step={step} />
-                    })}
-                </div>
+                <AllSteps steps4_allStepsArr={steps4_allStepsArr}/>
                 {cta1}
             </div>
         </section>

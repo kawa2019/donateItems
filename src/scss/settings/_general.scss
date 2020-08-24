@@ -13,6 +13,7 @@ $main-transition: opacity 0.3s ease-out;
 
 @mixin main-hover($color: $main-color) {
   &:hover {
+    opacity: 0.5;
     @include settingBorder($color);
   }
 }
