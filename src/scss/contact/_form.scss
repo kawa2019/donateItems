@@ -1,0 +1,83 @@
+form {
+    position: relative;
+    width: 528px;
+    height: 510px;
+    margin-top: 200px;
+    border: 1px solid transparent;
+    color: $main-color;
+    .private_data {
+        border-bottom: 1px solid #707070;
+        position: relative;
+        input,
+        textarea {
+            border: none;
+            outline: none;
+            line-height: 24px;
+            margin-top: 12px;
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            &::placeholder {
+                color: #3c3c3c26;
+            }
+        }
+        label {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+        &:nth-last-child(4) {
+            margin-right: 10px;
+        }
+        .errorText {
+            position: absolute;
+            color: #f00;
+            bottom: -20px;
+        }
+    }
+    .message {
+        margin-top: 40px;
+        textarea {
+            height: 97px;
+            resize: none;
+        }
+    }
+    .personalData {
+        margin-top: 70px;
+        height: 62px;
+        width: 256px;
+        display: inline-block;
+    }
+    .private_dataError {
+        border-bottom: 1px solid #f00;
+    }
+    .sendMessage {
+        background-color: #fff;
+        border: $main-border;
+        position: absolute;
+        font-weight: 300;
+        font-size: 18px;
+        color: #000;
+        height: 50px;
+        width: 150px;
+        bottom: 0;
+        right: 0;
+        padding: 13px 52px;
+        outline: none;
+        transition: $main-transition;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .validateSucess {
+        position: absolute;
+        color: #4caf50;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        left: 25%;
+        right: 25%;
+        text-align: center;
+    }
+}

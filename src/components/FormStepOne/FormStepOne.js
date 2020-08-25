@@ -14,7 +14,7 @@ export default function FormStepOne() {
     };
 
     return (
-        <section>
+        <section id="formStepOne">
             <div className="container">
                 <header>
                     <h1>Ważne!</h1>

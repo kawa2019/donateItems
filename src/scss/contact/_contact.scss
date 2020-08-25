@@ -1,0 +1,33 @@
+footer {
+    background: linear-gradient(rgba($color: #fff, $alpha: 0.8), rgba($color: #fff, $alpha: 0.8)),
+        url("../../assets/images/Background-Contact-Form.jpg");
+    height: 1026px;
+    margin-top: 80px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        height: 100%;
+        .socialContact,
+        .copyright {
+            position: absolute;
+        }
+        .socialContact {
+            position: absolute;
+            bottom: 19px;
+            right: 0;
+            img {
+                &:nth-child(2) {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .copyright {
+            font-size: 18px;
+            line-height: 24px;
+            bottom: 19px;
+            right: 700px;
+        }
+    }
+}

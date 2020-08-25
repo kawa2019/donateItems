@@ -7,7 +7,7 @@ import Login from './components/Login/Login'
 import Register from './components/Register/Register'
 import LoggedOut from './components/LoggedOut/LoggedOut'
 import DonateItemsForm from './components/DonateItemsForm/DonateItemsForm'
-import HomeContact from './components/HomeContact/HomeContact'
+import {Contact} from './components/Contact/Contact'
 import FormStepOne from './components/FormStepOne/FormStepOne'
 
 import {
@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/donateItemsForm">
           <DonateItemsForm/>
           <FormStepOne/>
-          <HomeContact/>
+          <Contact/>
         </Route>
       </Switch>
     </HashRouter>
