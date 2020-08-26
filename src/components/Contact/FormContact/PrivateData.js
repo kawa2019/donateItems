@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const PrivateData = ({ label, placeholder, value, error, setData, textarea, private_class}) => {
+export const PrivateData = ({ label, placeholder, value, error, setData, textarea, private_class=""}) => {
     return (
         <>
             <div className={!error ? `private_data ${private_class}` : `private_data private_dataError ${private_class}`} >

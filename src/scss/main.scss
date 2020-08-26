@@ -8,7 +8,6 @@
 @import "./nav/navigation";
 @import "./nav/userAction";
 @import "./nav/navScroll";
-@import "./login";
 @import "./decor";
 @import "./cta";
 @import "./mainSection";
@@ -22,6 +21,9 @@
 @import "./whomHelp/pagination";
 @import "./contact/contact";
 @import "./contact/form";
+@import "./contact/privateData.scss";
+@import "./contact/sendMessageBtn";
+@import "./accountUser";
 @import "register";
 @import "loggedOut";
 @import "mainFormDonateItems";

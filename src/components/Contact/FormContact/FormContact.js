@@ -1,12 +1,13 @@
 import React from 'react';
 import { PrivateData } from './PrivateData';
 import { useFormContactLogic } from './useFormContactLogic';
+import { BtnForm } from './BtnForm';
 
 export const FormContact = ({ decor }) => {
     const { name, setName, email, setEmail, text, setText, errorName, errorEmail, errorText, validateSucess,
         handleForm } = useFormContactLogic()
     return (
-        <form onSubmit={handleForm}>
+        <form onSubmit={handleForm} className="formContact">
             {decor}
             {validateSucess && <p className="validateSucess">{validateSucess}</p>}
             <PrivateData label="Wpisz swoje imię" placeholder="Krzysztof"
@@ -16,7 +17,7 @@ export const FormContact = ({ decor }) => {
             <PrivateData label="Wpisz swoją wiadomość"
                 placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo consequat."
                 value={text} error={errorText} setData={setText} textarea private_class="message" />
-            <input className="sendMessage" type="submit" value="Wyślij" />
+            <BtnForm value="Wyślij" />
         </form>
     )
 }
