@@ -10,7 +10,7 @@
 @import "./nav/navScroll";
 @import "./decor";
 @import "./cta";
-@import "./mainSection";
+@import "./firstView";
 @import "./threeCol";
 @import "./steps4/steps4";
 @import "./steps4/steps4_allSteps";
@@ -24,11 +24,12 @@
 @import "./contact/privateData.scss";
 @import "./contact/sendMessageBtn";
 @import "./accountUser";
-@import "register";
 @import "loggedOut";
-@import "mainFormDonateItems";
-@import "formStepOne";
-
+@import "userDonateView";
+@import "./formStepSection/formStepsSection";
+@import "./formStepSection/formSteps";
+@import "./formStepSection/importantInfo";
 body {
   font-family: $font-base;
+  color: $main-color;
 }

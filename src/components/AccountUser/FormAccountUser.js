@@ -4,9 +4,9 @@ import { ButtonsUser } from './ButtonsUser';
 import { DataUser } from './DataUser';
 import {useFormAccountLogic} from './useFormAccountLogic';
 
-export const FormAccountUser = ({ textDecor, kind }) => {
+export const FormAccountUser = ({ textDecor, kind, setLoggedUser }) => {
     const {email, password, repeatPassword, setEmail, setPassword, setRepeatPassword,
-        errorEmail, errorPassword , errorRepeatPassword, handleForm} =useFormAccountLogic(kind)
+        errorEmail, errorPassword , errorRepeatPassword, handleForm} =useFormAccountLogic(kind,{setLoggedUser})
 
     return (
         <form className="formAccountUser" onSubmit={handleForm}>

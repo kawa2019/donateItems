@@ -1,0 +1,54 @@
+.formSteps {
+    height: 883px;
+    &:before {
+        content: "";
+        position: absolute;
+        background-image: url("../../assets/images/Background-Form.webp");
+        left: 0;
+        right: 0;
+        top: 179px;
+        height: 883px;
+        z-index: -1;
+    }
+    .form_stepNum {
+        margin-top: 36px;
+        margin-bottom: 70px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 27px;
+        display: block;
+    }
+    .choose_wrapper {
+        margin-top: 40px;
+        .oneToChoose {
+            margin-top: 42px;
+            input {
+                opacity: 0;
+            }
+            label {
+                position: relative;
+                margin-left: 57px;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 32px;
+                color: #000;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    height: 40px;
+                    width: 40px;
+                    border: $main-border;
+                    left: -70px;
+                    bottom: -4px;
+                }
+            }
+            input + label::before {
+                background-color: transparent;
+            }
+            input:checked + label::before {
+                background-color: #fad648;
+            }
+        }
+    }
+}

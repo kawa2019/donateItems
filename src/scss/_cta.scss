@@ -10,7 +10,13 @@
     color: $main-color;
     height: 120px;
     width: 310px;
-    text-align: center;
+    a {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        padding: 22px 0;
+    }
     &:hover {
         opacity: 0.5;
     }

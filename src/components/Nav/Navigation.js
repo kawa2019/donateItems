@@ -10,8 +10,8 @@ export const Navigation = ({ loggedUser, setLoggedUser }) => {
         <header>
             <div className="container">
                 <nav>
-                    <UserAction setStartBorder={setStartBorder} setLoggedUser={setLoggedUser} loggedUser={loggedUser}/>
-                    <NavScroll startBorder={startBorder} setStartBorder={setStartBorder}  />
+                    <UserAction setStartBorder={setStartBorder} setLoggedUser={setLoggedUser} loggedUser={loggedUser} />
+                    <NavScroll startBorder={startBorder} setStartBorder={setStartBorder} />
                 </nav>
             </div>
         </header>)

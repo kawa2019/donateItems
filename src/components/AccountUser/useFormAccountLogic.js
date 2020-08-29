@@ -1,14 +1,13 @@
 import {useState, useEffect} from 'react';
 import { useHistory } from 'react-router-dom'
 
-export const useFormAccountLogic=(kind)=>{
+export const useFormAccountLogic=(kind, {setLoggedUser})=>{
     const [email, setEmail] = useState("");
     const [errorEmail, setErrorEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errorPassword, setErrorPassword] = useState("");
     const [repeatPassword, setRepeatPassword] = useState("");
     const [errorRepeatPassword, setErrorRepeatPassword] = useState("");
-    const [user, setUser] = useState();
     let history = useHistory();
     useEffect(() => {
         setErrorEmail("");
@@ -39,7 +38,7 @@ export const useFormAccountLogic=(kind)=>{
             errorsArr.push(repeatPassword);
         }
         if (errorsArr.length === 0) {
-            setUser(email);
+            setLoggedUser(email);
             history.push("/");
         }
     }

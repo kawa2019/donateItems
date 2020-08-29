@@ -1,14 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom"
-
-
-
-export const Main = ({ decor, cta1, cta2 }) => {
+export const FirstView = ({ decor, cta1, cta2 }) => {
 
   return (
-    <main>
+    <section id="firstView">
       <div className="container">
-        <div className="main_content">
+        <div className="firstView_content">
           {decor}
           <div className="buttons">
             {cta1}
@@ -16,7 +12,7 @@ export const Main = ({ decor, cta1, cta2 }) => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   )
 }
 

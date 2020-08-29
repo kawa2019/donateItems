@@ -1,0 +1,63 @@
+#userDonateFirstView {
+    height: 723px;
+    position: relative;
+    .container {
+        border: 1px solid transparent;
+        &:before {
+            content: "";
+            position: absolute;
+            background: url(../assets/images/Form-Hero-Image.webp);
+            top: -130px;
+            left: 0px;
+            width: 1015px;
+            height: 853px;
+            z-index: -1;
+        }
+        .donateIntro {
+            width: 663px;
+            height: 455px;
+            margin-left: 816px;
+            margin-top: 125px;
+            .introText {
+                margin-top: 20px;
+                text-align: center;
+                font-weight: 300;
+                font-size: 40px;
+                line-height: 55px;
+                color: $main-color;
+            }
+            .steps4OneSquare {
+                display: inline-block;
+                color: #3c3c3c;
+                font-weight: 300;
+                line-height: 27px;
+                width: 134px;
+                height: 134px;
+                position: relative;
+                margin-top: 45px;
+                margin: 45px 14px 0 14px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    border: $main-border;
+                    transform: rotate(45deg);
+                }
+                .stepNum {
+                    display: block;
+                    text-align: center;
+                    font-size: 32px;
+                    transform-origin: unset;
+                }
+                .stepName {
+                    margin-top: 10px;
+                    font-size: 22px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

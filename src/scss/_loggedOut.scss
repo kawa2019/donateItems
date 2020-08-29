@@ -1,46 +1,27 @@
 .loggedOut {
-    margin-top: 9rem;
-    .container-loggedOut {
-        height: 18.1rem;
-        width: 30.7rem;
+    margin-top: 114px;
+    .container {
+        height: 403px;
+        width: 414px;
         margin: 0 auto;
         position: relative;
-        .headerFoot {
+        button {
+            display: block;
+            position: static;
             margin: 0 auto;
-            height: 12rem;
-            position: relative;
-            p {
-                color: $color5;
-                text-align: center;
-                font-family: $font-base;
-                font-size: 2.6rem;
-                letter-spacing: -0.058rem;
-                line-height: 4.21rem;
-                height: 7.54rem;
-            }
-            .main_dec {
-                position: absolute;
-                bottom: 0%;
-                display: block;
-                width: 17.58rem;
-                height: 2.53rem;
-                left: 6.55rem;
-                background-image: url(../assets/images/Decoration.svg);
-                background-size: contain;
+            margin-top: 35px;
+            height: auto;
+            width: auto;
+            padding: 13px 15px;
+            @include settingBorder($main-border);
+            transition: $main-transition;
+            &:hover {
+                opacity: 0.5;
             }
         }
-        button {
-            position: absolute;
-            height: 2.56rem;
-            width: 8.7rem;
-            border: 0.75px solid $color5;
-            background-color: #FFF;
-            bottom: 0;
-            left: 11rem;
-            a {
-                text-decoration: none;
-                color: #000000;
-            }
+        a {
+            text-decoration: none;
+            color: inherit;
         }
     }
 }
