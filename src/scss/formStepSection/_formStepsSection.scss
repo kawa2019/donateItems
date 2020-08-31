@@ -9,18 +9,23 @@
         line-height: 46px;
         color: #000;
     }
-    .confirm {
+    .btn {
         width: 180px;
         height: 79px;
         border: $main-border;
         cursor: pointer;
         outline: none;
-        margin-top: 160px;
         background-color: transparent;
         font-weight: 300;
         font-size: 24px;
         line-height: 32px;
         color: #000;
+        position: absolute;
+        bottom: 50px;
+        margin-right: 50px;
+        &:nth-last-child(2) + .btn{
+            left: 410px;
+        }
         &:hover {
             opacity: 0.5;
         }

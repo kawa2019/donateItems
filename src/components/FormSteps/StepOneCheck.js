@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const StepOne = ({ stepOneArr, handleChange, items }) => {
+export const StepOneCheck = ({ stepOneArr, handleChange, items }) => {
     return (
         <ul className="choose_wrapper">
             {stepOneArr.map((input, index) => {

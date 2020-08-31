@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const StepsToDo = ({ stepNum }) => {
+export const StepsToDo = ({ stepNum, text }) => {
     return (
         <>
-            <span className="form_stepNum">Krok:{stepNum}/4</span>
-            <p className="important">Zaznacz co chcesz oddać:</p>
+            <span className="form_stepNum">Krok:{stepNum+1}/4</span>
+            <p className="important">{text}</p>
         </>
     )
 } 

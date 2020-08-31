@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const BtnFormSteps = ({ handleStepOne }) => {
+export const BtnFormSteps = ({ handleStep, content }) => {
     return (
-        <button onClick={handleStepOne} className="confirm">
-            Dalej
+        <button onClick={handleStep} className="btn">
+            {content}
         </button>
     )
 }
