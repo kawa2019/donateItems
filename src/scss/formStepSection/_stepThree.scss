@@ -1,0 +1,60 @@
+#formStepsSection {
+    .stepThree {
+        .dd-list {
+            width: 300px;
+            li {
+                padding: 0 18px;
+                background-color: #e8e9e4;
+                position: relative;
+                z-index: 1;
+                transition: background-color 0.3s ease-out;
+                &:hover {
+                    opacity: 1;
+                    background-color: #fff;
+                }
+            }
+        }
+        .important {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+        .choose_wrapper {
+            width: 675px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0;
+            li {
+                margin: 0;
+                &:nth-last-child(-n + 2) {
+                    margin-top: 25px;
+                }
+                label {
+                    display: inline-block;
+                    padding: 11px 26px;
+                    border: $main-border;
+                    margin: 0;
+                    margin-right: 12px;
+                    left: -13px;
+                    &::before {
+                        content: none;
+                    }
+                }
+                input:checked + label {
+                    background-color: #fad648;
+                }
+            }
+        }
+        .orgName{
+            input{
+                display: block;
+                width: 570px;
+                height: 40px;
+                border: $main-border;
+                background-color: transparent;
+                padding: 0 10px;
+                @include labelInputFormStep
+            }
+        }
+    }
+}

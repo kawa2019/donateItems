@@ -1,16 +1,13 @@
+@mixin labelInputFormStep {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+}
 .formSteps {
     height: 883px;
     border: 1px solid transparent;
-    &:before {
-        content: "";
-        position: absolute;
-        background-image: url("../../assets/images/Background-Form.webp");
-        left: 0;
-        right: 0;
-        top: 179px;
-        height: 883px;
-        z-index: -1;
-    }
+    position: relative;
     .form_stepNum {
         margin-top: 36px;
         margin-bottom: 70px;
@@ -29,10 +26,7 @@
             label {
                 position: relative;
                 margin-left: 57px;
-                font-weight: 300;
-                font-size: 24px;
-                line-height: 32px;
-                color: #000;
+                @include labelInputFormStep;
                 &:before {
                     content: "";
                     display: inline-block;
@@ -40,7 +34,7 @@
                     height: 40px;
                     width: 40px;
                     border: $main-border;
-                    left: -70px;
+                    left: -69px;
                     bottom: -4px;
                 }
             }

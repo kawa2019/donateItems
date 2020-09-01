@@ -1,0 +1,24 @@
+.formSteps {
+    .btn {
+        width: 180px;
+        height: 79px;
+        border: $main-border;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        margin-right: 50px;
+        &:nth-last-child(2) ~ .btn {
+            left: 230px;
+        }
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
