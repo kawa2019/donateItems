@@ -13,7 +13,18 @@ export const ApplyBtn = ({ stepNum, setStepNum, customBoxState, setListOpen, ste
         e.preventDefault()
         if (stepNum === 2) {
             if ((customBoxState.orgName || selectLocation !== '— wybierz —') && handleStateWhomHelp()) {
-                console.log(handleStateWhomHelp())
+                setStepNum(prevState => prevState + 1);
+                setListOpen(false)
+            }
+        } else if (stepNum === 3) {
+            const errorArr = []
+            if (customBoxState.street.lenght < 2) { errorArr.push(customBoxState.street) };
+            if (!/[0-9]{2}\-[0-9]{3}/.test(customBoxState.postCode)) { errorArr.push(customBoxState.postCode) }
+            if (customBoxState.city.lenght < 2) { errorArr.push(customBoxState.city) }
+            if (!/[0-9]{9}/.test(customBoxState.phone)) { errorArr.push(customBoxState.phone) }
+            if (!customBoxState.date) { errorArr.push(customBoxState.date) };
+            if (!customBoxState.time) { errorArr.push(customBoxState.time) }
+            if (errorArr.length === 0) {
                 setStepNum(prevState => prevState + 1);
                 setListOpen(false)
             }

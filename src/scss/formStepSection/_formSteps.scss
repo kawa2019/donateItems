@@ -16,34 +16,4 @@
         line-height: 27px;
         display: block;
     }
-    .choose_wrapper {
-        margin-top: 40px;
-        .oneToChoose {
-            margin-top: 42px;
-            input {
-                opacity: 0;
-            }
-            label {
-                position: relative;
-                margin-left: 57px;
-                @include labelInputFormStep;
-                &:before {
-                    content: "";
-                    display: inline-block;
-                    position: absolute;
-                    height: 40px;
-                    width: 40px;
-                    border: $main-border;
-                    left: -69px;
-                    bottom: -4px;
-                }
-            }
-            input + label::before {
-                background-color: transparent;
-            }
-            input:checked + label::before {
-                background-color: #fad648;
-            }
-        }
-    }
 }

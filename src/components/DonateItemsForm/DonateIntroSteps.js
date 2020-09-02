@@ -7,7 +7,7 @@ export const DonateIntroSteps = () => {
             <p className="introText">Wystarczą 4 proste kroki:</p>
             {steps4Arr.map((step, index) => {
                 return (
-                    <div className="steps4OneSquare">
+                    <div className="steps4OneSquare" key={index}>
                         <span className="stepNum">{index + 1}</span>
                         <p className="stepName">{step}</p>
                     </div>

@@ -6,17 +6,22 @@ import { ApplyBtn } from './ApplyBtn';
 
 export const FormSteps = () => {
     const [customBoxState, setCustomBoxState] = useState({
-        items: false, kids: "",
-        mothers: "", homeless: "", disabled: "", elderly: ""
+        items: false, orgName: "", kids: "",
+        mothers: "", homeless: "", disabled: "", elderly: "", street: "", city: "", postCode: "", phone: "",
+        date: "", time: "", comment: ""
     })
-    const [stepNum, setStepNum] = useState(2);
+    const [stepNum, setStepNum] = useState(3);
     const [selectBags, setSelectBags] = useState("— wybierz —");
     const [selectLocation, setSelectLocation] = useState("— wybierz —");
     const [listOpen, setListOpen] = useState(false);
-    const stepOneArr = [{ whatDonate: "goodClothes", text: "ubrania, które nadają się do ponownego użycia" },
-    { whatDonate: "badClothes", text: "ubrania, do wyrzucenia" },
-    { whatDonate: "toys", text: "zabawki" },
-    { whatDonate: "books", text: "książki" }, { whatDonate: "other", text: "inne" }]
+    const stepOneArr = [{ value: "goodClothes", text: "ubrania, które nadają się do ponownego użycia" },
+    { value: "badClothes", text: "ubrania, do wyrzucenia" },
+    { value: "toys", text: "zabawki" },
+    { value: "books", text: "książki" }, { value: "other", text: "inne" }]
+    const stepFourAddressData = [{ name: "street", text: "Ulica" }, { name: "city", text: "Miasto" },
+    { name: "postCode", text: "Kod pocztowy" }, { name: "phone", text: "Numer telefonu" }];
+    const stepFourPickUpDate = [{ name: "date", text: "Data" }, { name: "time", text: "Godzina" },
+    { name: "comment", text: "Uwagi dla kuriera" }]
     const textStep = [{
         textImportant: "Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je przekazać.",
         textToDO: "Zaznacz co chcesz oddać:"
@@ -28,6 +33,9 @@ export const FormSteps = () => {
     {
         textImportant: "Jeśli wiesz komu chcesz pomóc, możesz wpisać nazwę tej organizacji w wyszukiwarce. Możesz też filtrować organizacje po ich lokalizacji bądź celu ich pomocy.",
         textToDO: "Lokalizacja:"
+    }, {
+        textImportant: "Podaj adres oraz termin odbioru rzeczy.",
+        textToDO: "Podaj adres oraz termin odbioru rzecz przez kuriera"
     }];
     const stepThreeChooseArr = [{ name: "kids", text: "dzieciom" }, { name: "mothers", text: "samotnym matkom" },
     { name: "homeless", text: "bezdomnym" }, { name: "disabled", text: "niepełnosprawnym" },
@@ -49,9 +57,10 @@ export const FormSteps = () => {
                     <WhichSteps stepOneArr={stepOneArr} handleChange={handleChange} customBoxState={customBoxState}
                         selectBags={selectBags} setSelectBags={setSelectBags} stepNum={stepNum}
                         selectLocation={selectLocation} setSelectLocation={setSelectLocation}
-                        listOpen={listOpen} setListOpen={setListOpen} stepThreeChooseArr={stepThreeChooseArr} />
+                        listOpen={listOpen} setListOpen={setListOpen} stepThreeChooseArr={stepThreeChooseArr}
+                        stepFourAddressData={stepFourAddressData} stepFourPickUpDate={stepFourPickUpDate} />
                     <ApplyBtn stepNum={stepNum} setStepNum={setStepNum} customBoxState={customBoxState} setListOpen={setListOpen}
-                        stepThreeChooseArr={stepThreeChooseArr} selectLocation={selectLocation}/>
+                        stepThreeChooseArr={stepThreeChooseArr} selectLocation={selectLocation} />
                 </form>
             </div>
         </section>

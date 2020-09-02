@@ -28,10 +28,13 @@
 @import "userDonateView";
 @import "./formStepSection/formStepsSection";
 @import "./formStepSection/formSteps";
+@import './formStepSection/customBox';
 @import "./formStepSection/importantInfo";
 @import "./formStepSection/customSelect";
 @import "./formStepSection/btn";
 @import "./formStepSection/stepThree";
+@import './formStepSection/stepThreeFour';
+@import './formStepSection/stepFour';
 body {
   font-family: $font-base;
   color: $main-color;
