@@ -1,5 +1,16 @@
+.stepSectionSmall {
+    border: 1px solid transparent;
+    &::before {
+        top: 0 !important;
+    }
+    .decor {
+        width: 626px;
+        margin-top: 330px;
+    }
+}
 #formStepsSection {
-    height: 1062px;
+    max-height: 1062px;
+    min-height: 833px;
     position: relative;
     &:before {
         content: "";
@@ -18,5 +29,8 @@
         font-weight: 600;
         line-height: 46px;
         color: #000;
+    }
+    .errorData {
+        border: 1px solid #ff3333 !important;
     }
 }

@@ -1,37 +1,55 @@
 import React from 'react';
 
-export const StepCustomBox = ({ stepChooseArr, handleChange, customBoxState, type, textImportant }) => {
-    const controlledChecked = (input) => {
+export const StepCustomBox = ({ stepChooseArr, handleChange,
+    customBoxState, type, textImportant, error, sum }) => {
+    const controlledChecked = (tag) => {
         if (type === "radio") {
-            return input.value === customBoxState.items
+            return tag.value === customBoxState.items
         } else if (type === "checkbox") {
-            return customBoxState[input.name]
+            return customBoxState[tag.name]
         }
     }
-    const controlledValue = (input) => {
+    const controlledValue = (tag) => {
         if (type === "radio") {
-            return input.value
-        } else if (type === "text" || input.name === "date" || input.name === "time") {
-            return customBoxState[input.name]
+            return tag.value
+        } else if (type === "text" || tag.name === "date" || tag.name === "time") {
+            return customBoxState[tag.name]
         }
     }
-    const controlledType = (input) => {
-        if (input.name === "date") { return "date" }
-        else if (input.name === "time") {
+    const controlledType = (tag) => {
+        if (tag.name === "date") { return "date" }
+        else if (tag.name === "time") {
             return "time"
         }
         else return type
     }
+    const oneBoxInner = (tag, index) => {
+        if (tag.name !== "comment") {
+            return (
+                <>
+                    <input type={controlledType(tag)} className={customBoxState[`error_${tag.name}`] && "errorData"} id={`${type}_${index}`} name={!tag.name ? "items" : tag.name}
+                        value={controlledValue(tag)} checked={controlledChecked(tag)} onChange={handleChange} readOnly={sum && "readOnly"} />
+                    {tag.text && <label htmlFor={`${type}_${index}`}>{tag.text}</label>}
+                </>
+            )
+        } else {
+            return (
+                <>
+                    <textarea type={controlledType(tag)} className={customBoxState[`error_${tag.name}`] && "errorData"} id={`${type}_${index}`} name={!tag.name ? "items" : tag.name}
+                        value={controlledValue(tag)} checked={controlledChecked(tag)} onChange={handleChange} readOnly={sum && "readOnly"} />
+                    {tag.text && <label htmlFor={`${type}_${index}`}>{tag.text}</label>}
+                </>
+            )
+        }
+    }
     return (
-        <div className="customBox_wrapper">
+        <div className={!error ? "customBox_wrapper" : "customBox_wrapper errorData"}>
             {textImportant && <p className="important">{textImportant}</p>}
             <ul className="customBoxList_wrapper">
-                {stepChooseArr.map((input, index) => {
+                {stepChooseArr.map((tag, index) => {
                     return (
                         <li className="oneBox" key={index}>
-                            <input type={controlledType(input)} id={`${type}_${index}`} name={!input.name ? "items" : input.name}
-                                value={controlledValue(input)} checked={controlledChecked(input)} onChange={handleChange} />
-                            {input.text && <label htmlFor={`${type}_${index}`}>{input.text}</label>}
+                            {oneBoxInner(tag, index)}
                         </li>)
                 })}
             </ul>

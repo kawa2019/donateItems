@@ -3,6 +3,7 @@ import { StepCustomBox } from './StepCustomBox';
 import { StepThree } from './StepThree';
 import { CustomSelect } from './CustomSelect';
 import { StepFour } from './StepFour';
+import { Sum } from './Sum';
 
 export const WhichSteps = ({ stepOneArr, handleChange, customBoxState, selectBags, setSelectBags, stepNum,
     selectLocation, setSelectLocation, listOpen, setListOpen, stepThreeChooseArr,
@@ -23,7 +24,11 @@ export const WhichSteps = ({ stepOneArr, handleChange, customBoxState, selectBag
                     stepChooseArr={stepThreeChooseArr} />
             case 3:
                 return <StepFour stepFourPickUpDate={stepFourPickUpDate} stepFourAddressData={stepFourAddressData}
-                    handleChange={handleChange} customBoxState={customBoxState}/>
+                    handleChange={handleChange} customBoxState={customBoxState} />
+            case 4:
+                return <Sum stepFourPickUpDate={stepFourPickUpDate} stepFourAddressData={stepFourAddressData}
+                    customBoxState={customBoxState} selectBags={selectBags} stepChooseArr={stepOneArr} stepThreeChooseArr={stepThreeChooseArr}
+                    selectLocation={selectLocation} />
         }
     }
     return (
