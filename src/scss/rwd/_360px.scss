@@ -1,0 +1,128 @@
+@media (max-width: 550px) {
+    .container {
+        width: 350px;
+    }
+    #firstView .container {
+        &::before {
+            background-size: 100%;
+            height: 263px;
+            width: 100%;
+            top: unset;
+            left: 0;
+            bottom: 0;
+        }
+        .firstView_content .buttons {
+            margin-top: 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+        }
+    }
+    .three_col {
+        height: 1100px;
+    }
+    .steps4_wrapper {
+        height: 1354px;
+        &::before {
+            height: 1025px;
+            top: 200px;
+        }
+        .container {
+            width: 350px;
+            .steps4_allSteps {
+                height: 1025px;
+            }
+        }
+    }
+    #aboutUs {
+        height: 1150px;
+        .decor {
+            margin-top: 50px;
+        }
+        .aboutUsContent {
+            width: 350px;
+        }
+    }
+    #whomHelp .container {
+        width: 350px;
+        .btnsWhomHelp {
+            width: 350px;
+        }
+        .mainInfo {
+            .introText {
+                width: 350px;
+            }
+            .typeHelp {
+                height: 200px;
+            }
+        }
+    }
+    .formContact {
+        width: 350px;
+    }
+    footer .container .copyright {
+        left: 0;
+        margin-left: 0;
+    }
+    .accountUser .container .formAccountUser {
+        width: 350px;
+        .data-user {
+            width: 350px;
+        }
+    }
+    #userDonateFirstView {
+        height: 973px;
+        .container:before {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                url(/static/media/Form-Hero-Image.a660e2de.webp);
+            width: 350px;
+            height: 900px;
+            top: -135px;
+            background-size: 100% 100%;
+        }
+    }
+    #formStepsSection {
+        .important {
+            margin-top: 0;
+        }
+        .stepFour .customBox_wrapper {
+            width: 350px;
+            .customBoxList_wrapper .oneBox input,
+            .customBoxList_wrapper .oneBox textarea {
+                width: 200px;
+            }
+        }
+        .formSteps {
+            .form_stepNum {
+                margin-bottom: 0;
+            }
+            .stepThree {
+                .customBox_wrapper {
+                    &:last-child {
+                        input {
+                            width: 350px;
+                        }
+                    }
+                    .customBoxList_wrapper {
+                        width: 350px;
+                    }
+                }
+            }
+            .btn {
+                left: 50%;
+                margin-left: -90px;
+                &:nth-last-child(2) ~ .btn {
+                    left: 50%;
+                    bottom: 150px;
+                }
+            }
+            .sum .whatGive {
+                margin-top: 0;
+            }
+        }
+    }
+    .stepSectionSmall .decor {
+        width: 350px;
+    }
+}

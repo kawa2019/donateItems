@@ -1,0 +1,179 @@
+@media (max-width: 850px) {
+    .container {
+        width: 500px;
+    }
+    .cta {
+        width: 240px;
+    }
+    header .container nav {
+        svg {
+            height: 50px;
+            width: 50px !important;
+            margin-top: 10px;
+        }
+        .barsMenu {
+            background-color: #fff;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    #firstView .container .firstView_content {
+        margin-top: 50px;
+    }
+    .three_col {
+        height: 750px;
+        .three_colStatistics {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .one_col {
+                width: 204px;
+                height: 372px;
+                margin: 0;
+            }
+        }
+    }
+    .steps4_wrapper {
+        .container {
+            width: 500px;
+        }
+    }
+    #aboutUs {
+        &:before {
+            width: 100%;
+            height: 35%;
+            bottom: 0;
+            background-position: bottom;
+        }
+        .aboutUsContent {
+            width: 500px;
+            margin: 0 auto;
+            .signature {
+                margin-top: 0;
+            }
+        }
+    }
+    #whomHelp .container {
+        width: 500px;
+        .btnsWhomHelp {
+            height: 250px;
+            width: 500px;
+            flex-direction: column;
+            button {
+                padding: 20px 42px;
+            }
+        }
+        .mainInfo {
+            margin-top: 20px;
+            .introText {
+                width: 500px;
+                height: 115px;
+            }
+            .typeHelp {
+                height: 150px;
+            }
+        }
+    }
+    .formContact {
+        width: 428px;
+        height: 650px;
+        margin-top: 100px;
+        .private_data {
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    }
+    #userDonateFirstView {
+        height: 773px;
+        .container:before {
+            width: 315px;
+            height: 250px;
+            top: -135px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .nav_user li:nth-last-child(3) {
+            top: -30px;
+            margin-left: -75px;
+            left: 50%;
+        }
+        .kickSquares {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .importantInfo {
+        height: 250px;
+        &:before {
+            height: 250px;
+        }
+    }
+    #formStepsSection {
+        max-height: 1462px;
+        &::before {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                url(/static/media/Background-Form.e42e810a.webp);
+            top: 250px;
+            background-position: 88%;
+            height: 1162px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .formSteps {
+            height: 1162px;
+            .dd-wrapper {
+                width: 300px;
+                .dd-desc {
+                    margin-top: 50px;
+                }
+                .dd-list {
+                    top: unset;
+                    bottom: -175px;
+                }
+            }
+            .stepOne_wrapper {
+                .customBoxList_wrapper .oneBox {
+                    position: relative;
+                    input {
+                        position: absolute;
+                        left: -99999px;
+                    }
+                    label {
+                        position: unset;
+                        display: inline-block;
+                        &:before {
+                            left: 0;
+                            top: 50%;
+                            margin-top: -20px;
+                        }
+                    }
+                }
+            }
+            .stepThree .customBox_wrapper {
+                &:last-child {
+                    input {
+                        width: 500px;
+                        position: unset;
+                    }
+                }
+                .customBoxList_wrapper {
+                    align-items: center;
+                    width: 500px;
+                    li {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    #formStepsSection .stepThreeFour .important,
+    #formStepsSection .sum .important {
+        margin-top: 10px;
+    }
+    .accountUser .container .formAccountUser {
+        width: 500px;
+    }
+}

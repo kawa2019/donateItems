@@ -1,0 +1,25 @@
+@media (max-width: 1650px) {
+    .container {
+        width: 1200px;
+    }
+    #firstView .container {
+        &:before {
+            width: 968px;
+        }
+    }
+    #aboutUs {
+        &:before {
+            background-position: 40%;
+        }
+        .aboutUsContent {
+            width: 580px;
+        }
+    }
+    #whomHelp .container {
+        width: 1044px;
+    }
+    #userDonateFirstView .container:before {
+        width: 815px;
+        background-position: right;
+    }
+}

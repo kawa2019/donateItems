@@ -36,7 +36,11 @@
 @import "./formStepSection/stepThreeFourSum";
 @import "./formStepSection/stepFour";
 @import "./formStepSection/sum";
-@import "./rwd";
+@import "./rwd/1650px";
+@import "./rwd/1250px";
+@import "./rwd/850px";
+@import "./rwd/360px";
+
 body {
   font-family: $font-base;
   color: $main-color;

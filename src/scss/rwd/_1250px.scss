@@ -1,0 +1,50 @@
+@media (max-width: 1250px) {
+    .container {
+        width: 800px;
+    }
+    .steps4_wrapper {
+        height: 824px;
+        &::before {
+            height: 525px;
+        }
+        .container {
+            width: 700px;
+            .steps4_allSteps {
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 525px;
+                .one_step {
+                    margin: 40px;
+                }
+            }
+        }
+    }
+    #aboutUs {
+        &:before {
+            width: 100%;
+            height: 38%;
+            bottom: 0;
+        }
+        .aboutUsContent {
+            width: 680px;
+            margin: 0 auto;
+        }
+    }
+    #whomHelp .container {
+        width: 744px;
+    }
+    footer .container {
+        align-items: flex-start;
+        .copyright {
+            left: 50%;
+            margin-left: -100px;
+            right: unset;
+        }
+    }
+    #userDonateFirstView .container:before {
+        width: 415px;
+    }
+    #formStepsSection .stepFour .customBox_wrapper:first-child {
+        margin-right: 0;
+    }
+}
