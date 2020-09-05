@@ -1,4 +1,4 @@
-donateItems -This is the app where user can donate unnecessary items to trusted organization. It is a bit similar to charity organization BHF in the UK.The application is still developing to be totally use.
+donateItems -This is the app where user can donate unnecessary items to trusted organization. It is a bit similar to charity organization BHF in the UK.The application has a fake login/register actions, after these actions is possibility to fill application form. The app has RWD.
 Technologies:
 - HTML,CSS,Sass
 - JavaScript,React, React-router/app
@@ -13,14 +13,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `npm i`
 
 This installs node modules.You must use it in order to go next steps.
-
-Go to another terminal and in src/Database directory you must run JSON Server:
- 
- ### `json-server -p 4000 database.json -m ../../node_modules/json-server-auth`
-
-The page will be contains data from JSON Server
-
-Return to first terminal.
 
 In the project directory, you can run:
 
