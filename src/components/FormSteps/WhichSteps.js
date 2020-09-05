@@ -12,7 +12,10 @@ export const WhichSteps = ({ stepOneArr, handleChange, customBoxState, selectBag
     const handleSteps = () => {
         switch (stepNum) {
             case 0:
-                return <StepCustomBox stepChooseArr={stepOneArr} handleChange={handleChange} customBoxState={customBoxState} type="radio" />;
+                return (
+                    <div className="stepOne_wrapper">
+                        <StepCustomBox stepChooseArr={stepOneArr} handleChange={handleChange} customBoxState={customBoxState} type="radio" />
+                    </div>)
             case 1:
                 return <CustomSelect arrOption={[1, 2, 3, 4, 5]} description="Liczba 60l worków:"
                     selected={selectBags} setSelect={setSelectBags} listOpen={listOpen}

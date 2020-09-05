@@ -3,17 +3,20 @@
     position: relative;
     border: 1px solid transparent;
     .container {
+        display: flex;
+        justify-content: flex-end;
         &:before {
             content: "";
             background: url(../assets/images/Home-Hero-Image.webp);
+            background-position: right;
             position: absolute;
             height: 963px;
             width: 1368px;
             left: -483px;
             top: -132px;
+            z-index: -1;
         }
         .firstView_content {
-            margin-left: 788px;
             margin-top: 210px;
             .buttons {
                 display: flex;

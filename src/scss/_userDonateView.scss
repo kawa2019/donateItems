@@ -3,6 +3,8 @@
     position: relative;
     .container {
         border: 1px solid transparent;
+        display: flex;
+        justify-content: flex-end;
         &:before {
             content: "";
             position: absolute;
@@ -16,7 +18,6 @@
         .donateIntro {
             width: 663px;
             height: 455px;
-            margin-left: 816px;
             margin-top: 125px;
             .introText {
                 margin-top: 20px;
