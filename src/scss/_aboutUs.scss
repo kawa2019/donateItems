@@ -4,6 +4,7 @@
   background-color: $back-grey;
   border: 1px solid transparent;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -13,10 +14,12 @@
     background-image: url("../assets/images/People.webp");
     z-index: 1;
   }
+
   .aboutUsContent {
     margin: 186px 0;
     width: 660px;
     position: relative;
+
     .aboutUsText {
       margin-top: 55px;
       font-size: 30px;
@@ -25,6 +28,7 @@
       color: $main-color;
       text-align: center;
     }
+
     .signature {
       margin-top: 40px;
       position: absolute;

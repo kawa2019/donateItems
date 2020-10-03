@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 export const useFormContactLogic = () => {
     const [name, setName] = useState("")
@@ -17,7 +17,7 @@ export const useFormContactLogic = () => {
         try {
             const response = await fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
                 method: "POST",
-                body: JSON.stringify({ name, email, message: text }),
+                body: JSON.stringify({name, email, message: text}),
                 headers: {
                     "Content-Type": "application/json"
                 }
@@ -28,11 +28,9 @@ export const useFormContactLogic = () => {
                 const setErrors = data.errors.map(error => {
                     if (error.param === "name") {
                         setErrorName('Podane imię jest nieprawidłowe');
-                    }
-                    else if (error.param === "email") {
+                    } else if (error.param === "email") {
                         setErrorEmail('Podane email jest nieprawidłowe');
-                    }
-                    else {
+                    } else {
                         setErrorText('Wiadomość musi mieć conajmniej 120 znaków!');
                     }
                 })

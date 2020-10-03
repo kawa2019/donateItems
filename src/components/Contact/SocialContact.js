@@ -7,8 +7,8 @@ export const SocialContact = () => {
     return (
         <div className="socialContact">
             <span>
-                <img src={fb} />
-                <img src={insta} />
+                <img src={fb}/>
+                <img src={insta}/>
             </span>
         </div>
     )

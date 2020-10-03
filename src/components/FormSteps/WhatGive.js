@@ -2,7 +2,7 @@ import React from 'react';
 import tshirt from '../../assets/images/t-shirt.png';
 import location from '../../assets/images/location.png';
 
-export const WhatGive = ({ customBoxState, stepThreeChooseArr, stepChooseArr, selectLocation, selectBags }) => {
+export const WhatGive = ({customBoxState, stepThreeChooseArr, stepChooseArr, selectLocation, selectBags}) => {
     const groupFn = () => {
         const groupArr = ["kids", "mothers", "homeless", "elderly", "disabled"].map(group => {
             if (customBoxState[group] !== "") {
@@ -17,13 +17,14 @@ export const WhatGive = ({ customBoxState, stepThreeChooseArr, stepChooseArr, se
             <p className="important">Oddajesz:</p>
             <ul>
                 <li>
-                    <img src={tshirt} />
+                    <img src={tshirt}/>
                     <p>{selectBags !== "— wybierz —" && selectBags} worki, {stepChooseArr[stepChooseArr.findIndex(x => x.value === customBoxState.items)].text}
                         {groupFn()}</p>
                 </li>
                 <li>
-                    <img src={location} />
-                    <p>dla lokalizacji: {selectLocation !== "— wybierz —" && selectLocation}{customBoxState.orgName && customBoxState.orgName}</p>
+                    <img src={location}/>
+                    <p>dla
+                        lokalizacji: {selectLocation !== "— wybierz —" && selectLocation}{customBoxState.orgName && customBoxState.orgName}</p>
                 </li>
             </ul>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ImportantInfo = ({ text }) => {
+export const ImportantInfo = ({text}) => {
     return (
         <header className="importantInfo">
             <span className="important">Ważne!</span>

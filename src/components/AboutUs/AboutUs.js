@@ -8,7 +8,8 @@ export const AboutUs = ({decor}) => {
             <div className="container">
                 <div className="aboutUsContent">
                     {decor}
-                    <p className="aboutUsText">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                    <p className="aboutUsText">Nori grape silver beet broccoli kombu beet greens fava bean potato
+                        quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                     <img src={sign} className="signature"/>
                 </div>
             </div>

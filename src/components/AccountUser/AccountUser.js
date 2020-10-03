@@ -1,7 +1,7 @@
 import React from 'react';
-import { FormAccountUser } from './FormAccountUser';
+import {FormAccountUser} from './FormAccountUser';
 
-export const AccountUser = ({ kind = "", textDecor, setLoggedUser }) => {
+export const AccountUser = ({kind = "", textDecor, setLoggedUser}) => {
     return (
         <section className={`${kind} accountUser`}>
             <div className="container">

@@ -1,27 +1,31 @@
 .loggedOut {
-    margin-top: 114px;
-    .container {
-        height: 403px;
-        width: 414px;
-        margin: 0 auto;
-        position: relative;
-        button {
-            display: block;
-            position: static;
-            margin: 0 auto;
-            margin-top: 35px;
-            height: auto;
-            width: auto;
-            padding: 13px 15px;
-            @include settingBorder($main-border);
-            transition: $main-transition;
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+  margin-top: 114px;
+
+  .container {
+    height: 403px;
+    width: 414px;
+    margin: 0 auto;
+    position: relative;
+
+    button {
+      display: block;
+      position: static;
+      margin: 0 auto;
+      margin-top: 35px;
+      height: auto;
+      width: auto;
+      padding: 13px 15px;
+      @include settingBorder($main-border);
+      transition: $main-transition;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 }

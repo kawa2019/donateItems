@@ -1,27 +1,30 @@
 .typeHelp {
-    margin-bottom: 34px;
-    height: 81px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: $alt-border;
-    font-family: $font-alt;
+  margin-bottom: 34px;
+  height: 81px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $alt-border;
+  font-family: $font-alt;
 
-    &:nth-child(4) {
-        border-bottom: none;
-    }
-    .info_name {
-        font-size: 26px;
-        line-height: 31px;
-    }
-    .info_aim {
-        font-size: 18px;
-        line-height: 22px;
-        font-style: italic;
-    }
-    .info_items {
-        margin-top: 15px;
-        margin-right: 22px;
-        font-size: 18px;
-        line-height: 22px;
-    }
+  &:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .info_name {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .info_aim {
+    font-size: 18px;
+    line-height: 22px;
+    font-style: italic;
+  }
+
+  .info_items {
+    margin-top: 15px;
+    margin-right: 22px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SelectList = ({ arrOption, setSelect }) => {
+export const SelectList = ({arrOption, setSelect}) => {
     return (
         <ul className="dd-list">
             {arrOption.map((option, index) => {

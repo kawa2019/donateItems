@@ -1,12 +1,13 @@
 header .container {
   display: flex;
   justify-content: flex-end;
+
   nav {
-      height: 95px;
-      width: 683px;
-      margin-top: 37px;
-      display: flex;
-      align-items: flex-end;
-      flex-direction: column;
+    height: 95px;
+    width: 683px;
+    margin-top: 37px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
   }
 }

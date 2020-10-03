@@ -1,64 +1,75 @@
 .accountUser {
-    height: 830px;
-    margin-top: 115px;
-    .container {
-        .formAccountUser {
-            height: 500px;
-            width: 504px;
-            margin: 0 auto;
-            .data-user {
-                margin: 0 auto;
-                margin-top: 60px;
-                height: 235px;
-                width: 385px;
-                background-color: #f0f1f1;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                .personalData {
-                    input {
-                        background-color: #f0f1f1;
-                    }
-                    &:nth-child(1) {
-                        margin-top: 0;
-                    }
-                    &:nth-child(2), &:nth-child(3){
-                        margin-top: 30px;
-                    }
-                }
-            }
-            .buttonsUser {
-                height: 6.3rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                button,
-                input {
-                    position: static;
-                    height: auto;
-                    width: auto;
-                    padding: 13px 15px;
-                    @include settingBorder(transparent);
-                    &:hover {
-                        border: $main-border;
-                    }
-                }
-                a {
-                    text-decoration: none;
-                    color: inherit;
-                }
-            }
+  height: 830px;
+  margin-top: 115px;
+
+  .container {
+    .formAccountUser {
+      height: 500px;
+      width: 504px;
+      margin: 0 auto;
+
+      .data-user {
+        margin: 0 auto;
+        margin-top: 60px;
+        height: 235px;
+        width: 385px;
+        background-color: #f0f1f1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .personalData {
+          input {
+            background-color: #f0f1f1;
+          }
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+
+          &:nth-child(2), &:nth-child(3) {
+            margin-top: 30px;
+          }
         }
+      }
+
+      .buttonsUser {
+        height: 6.3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        button,
+        input {
+          position: static;
+          height: auto;
+          width: auto;
+          padding: 13px 15px;
+          @include settingBorder(transparent);
+
+          &:hover {
+            border: $main-border;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
     }
+  }
 }
+
 .register {
-    .container {
-        .formAccountUser {
-            height: 597px;
-            .data-user {
-                height: 328px;
-            }
-        }
+  .container {
+    .formAccountUser {
+      height: 597px;
+
+      .data-user {
+        height: 328px;
+      }
     }
+  }
 }

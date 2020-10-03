@@ -1,19 +1,20 @@
 .sendMessage {
-    background-color: #fff;
-    border: $main-border;
-    position: absolute;
-    font-weight: 300;
-    font-size: 18px;
-    color: #000;
-    height: 50px;
-    width: 150px;
-    bottom: 0;
-    right: 0;
-    padding: 13px 52px;
-    outline: none;
-    transition: $main-transition;
-    cursor: pointer;
-    &:hover {
-        opacity: 0.5;
-    }
+  background-color: #fff;
+  border: $main-border;
+  position: absolute;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000;
+  height: 50px;
+  width: 150px;
+  bottom: 0;
+  right: 0;
+  padding: 13px 52px;
+  outline: none;
+  transition: $main-transition;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }

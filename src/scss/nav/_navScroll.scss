@@ -1,26 +1,30 @@
 .menu {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 17px;
-    width: 100%;
-    &:hover li:nth-child(1) a {
-            @include settingBorder(transparent);
-        }
-    .nav_menuBorder {
-        @include settingBorder($main-color);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  width: 100%;
+
+  &:hover li:nth-child(1) a {
+    @include settingBorder(transparent);
+  }
+
+  .nav_menuBorder {
+    @include settingBorder($main-color);
+  }
+
+  li {
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+
+    &:nth-child(1) a, a {
+      text-decoration: none;
+      color: $main-color;
+      padding: 9px 20px;
+      display: inline-block;
+      transition: $main-transition;
+      @include settingBorder(transparent);
+      @include main-hover;
     }
-    li {
-        font-size: 18px;
-        line-height: 24px;
-        cursor: pointer;
-        &:nth-child(1) a, a {
-            text-decoration: none;
-            color: $main-color;
-            padding: 9px 20px;
-            display: inline-block;
-            transition: $main-transition;
-            @include settingBorder(transparent);
-            @include main-hover; 
-        }
-    }
+  }
 }

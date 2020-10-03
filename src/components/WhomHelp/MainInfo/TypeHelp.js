@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const TypeHelp = ({ currentToShowArr }) => {
+export const TypeHelp = ({currentToShowArr}) => {
     return (
         <>
             {currentToShowArr.map((toShow, index) => {

@@ -1,47 +1,55 @@
 #formStepsSection {
-    .stepThree {
-        .dd-list {
-            width: 300px;
-            li {
-                padding: 0 18px;
-                background-color: #e8e9e4;
-                position: relative;
-                z-index: 1;
-                transition: background-color 0.3s ease-out;
-                &:hover {
-                    opacity: 1;
-                    background-color: #fff;
-                }
-            }
+  .stepThree {
+    .dd-list {
+      width: 300px;
+
+      li {
+        padding: 0 18px;
+        background-color: #e8e9e4;
+        position: relative;
+        z-index: 1;
+        transition: background-color 0.3s ease-out;
+
+        &:hover {
+          opacity: 1;
+          background-color: #fff;
         }
-        .customBox_wrapper {
-            &:nth-child(3) {
-                input {
-                    display: block;
-                    width: 570px;
-                    opacity: 1;
-                }
-            }
-            .customBoxList_wrapper {
-                width: 675px;
-                display: flex;
-                flex-wrap: wrap;
-                margin-top: 0;
-                li {
-                    margin: 0;
-                    &:nth-last-child(-n + 2) {
-                        margin-top: 25px;
-                    }
-                    label {
-                        padding: 11px 26px;
-                        border: $main-border;
-                        left: -13px;
-                    }
-                    input:checked + label {
-                        background-color: #fad648;
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .customBox_wrapper {
+      &:nth-child(3) {
+        input {
+          display: block;
+          width: 570px;
+          opacity: 1;
+        }
+      }
+
+      .customBoxList_wrapper {
+        width: 675px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+
+        li {
+          margin: 0;
+
+          &:nth-last-child(-n + 2) {
+            margin-top: 25px;
+          }
+
+          label {
+            padding: 11px 26px;
+            border: $main-border;
+            left: -13px;
+          }
+
+          input:checked + label {
+            background-color: #fad648;
+          }
+        }
+      }
+    }
+  }
 }

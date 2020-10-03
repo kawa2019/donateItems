@@ -1,47 +1,55 @@
 .dd-wrapper {
-    color: #000;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 33px;
+  color: #000;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  display: inline-block;
+  position: relative;
+
+  .dd-desc {
+    margin-right: 26px;
+  }
+
+  .dd-desc,
+  .dd-header,
+  .angleIcon {
     display: inline-block;
+  }
+
+  .dd-header {
+    width: 300px;
+    height: 49px;
     position: relative;
-    .dd-desc {
-        margin-right: 26px;
+    border: $main-border;
+    margin-top: 50px;
+
+    .dd-header-title {
+      padding: 8px 18px;
     }
-    .dd-desc,
-    .dd-header,
-    .angleIcon {
-        display: inline-block;
+
+    svg {
+      position: absolute;
+      right: 0;
+      top: 12px;
+      width: 57px;
+      height: 26px;
     }
-    .dd-header {
-        width: 300px;
-        height: 49px;
-        position: relative;
-        border: $main-border;
-        margin-top: 50px;
-        .dd-header-title {
-            padding: 8px 18px;
-        }
-        svg {
-            position: absolute;
-            right: 0;
-            top: 12px;
-            width: 57px;
-            height: 26px;
-        }
+  }
+
+  .dd-list {
+    border: $main-border;
+    position: absolute;
+    right: 0;
+    top: 115px;
+
+    li {
+      padding: 0 35px;
+      transition: $main-transition;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
-    .dd-list {
-        border: $main-border;
-        position: absolute;
-        right: 0;
-        top: 115px;
-        li {
-            padding: 0 35px;
-            transition: $main-transition;
-            cursor: pointer;
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-    }
+  }
 }

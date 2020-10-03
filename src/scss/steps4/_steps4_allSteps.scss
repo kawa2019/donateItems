@@ -1,46 +1,53 @@
 .steps4_allSteps {
-    margin-top: 34px;
-    height: 325px;
-    display: flex;
-    justify-content: space-between;
-    .one_step {
-        width: 164px;
-        margin-top: 71px;
-        color: $main-color;
-        &:nth-child(3) .one_stepTextUp {
-            margin-top: 1px;
-            line-height: 20px;
-        }
-        img {
-            margin: 0 auto;
-            display: block;
-        }
-        .one_stepTextUp,
-        .one_stepTextBottom {
-            text-align: center;
-        }
-        .one_stepTextUp {
-            padding: 0 17.5px;
-            font-size: 18px;
-            line-height: 24px;
-            margin: 10px 0;
+  margin-top: 34px;
+  height: 325px;
+  display: flex;
+  justify-content: space-between;
 
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                left: 25%;
-                right: 25%;
-                bottom: -10px;
-                width: 70px;
-                height: 1px;
-                background: $main-color;
-            }
-        }
-        .one_stepTextBottom {
-            font-size: 16px;
-            line-height: 16px;
-            padding-top: 11px;
-        }
+  .one_step {
+    width: 164px;
+    margin-top: 71px;
+    color: $main-color;
+
+    &:nth-child(3) .one_stepTextUp {
+      margin-top: 1px;
+      line-height: 20px;
     }
+
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .one_stepTextUp,
+    .one_stepTextBottom {
+      text-align: center;
+    }
+
+    .one_stepTextUp {
+      padding: 0 17.5px;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 10px 0;
+
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        bottom: -10px;
+        width: 70px;
+        height: 1px;
+        background: $main-color;
+      }
+    }
+
+    .one_stepTextBottom {
+      font-size: 16px;
+      line-height: 16px;
+      padding-top: 11px;
+    }
+  }
 }

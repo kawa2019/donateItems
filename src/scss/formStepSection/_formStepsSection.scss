@@ -1,37 +1,43 @@
 .stepSectionSmall {
-    border: 1px solid transparent;
-    &::before {
-        top: 0 !important;
-    }
-    .decor {
-        width: 626px;
-        margin-top: 330px;
-    }
+  border: 1px solid transparent;
+
+  &::before {
+    top: 0 !important;
+  }
+
+  .decor {
+    width: 626px;
+    margin-top: 330px;
+  }
 }
+
 #formStepsSection {
-    max-height: 1062px;
-    min-height: 833px;
-    position: relative;
-    &:before {
-        content: "";
-        position: absolute;
-        background-image: url("../../assets/images/Background-Form.webp");
-        background-position: right;
-        left: 0;
-        right: 0;
-        top: 179px;
-        height: 883px;
-        z-index: -1;
-    }
-    .important {
-        display: block;
-        margin-top: 48px;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 46px;
-        color: #000;
-    }
-    .errorData {
-        border: 1px solid #ff3333 !important;
-    }
+  max-height: 1062px;
+  min-height: 833px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/images/Background-Form.webp");
+    background-position: right;
+    left: 0;
+    right: 0;
+    top: 179px;
+    height: 883px;
+    z-index: -1;
+  }
+
+  .important {
+    display: block;
+    margin-top: 48px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    color: #000;
+  }
+
+  .errorData {
+    border: 1px solid #ff3333 !important;
+  }
 }

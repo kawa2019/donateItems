@@ -1,34 +1,40 @@
 #formStepsSection {
-    .stepFour {
-        .customBox_wrapper {
-            display: inline-block;
-            width: 392px;
-            vertical-align: top;
-            &:first-child {
-                margin-right: 152px;
-            }
-            .customBoxList_wrapper {
-                margin-top: 0;
-                .oneBox {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 20px;
-                    input,
-                    textarea {
-                        opacity: 1;
-                        width: 256px;
-                    }
-                    textarea {
-                        resize: none;
-                        height: 120px;
-                    }
-                    label {
-                        width: 115px;
-                    }
-                }
-            }
+  .stepFour {
+    .customBox_wrapper {
+      display: inline-block;
+      width: 392px;
+      vertical-align: top;
+
+      &:first-child {
+        margin-right: 152px;
+      }
+
+      .customBoxList_wrapper {
+        margin-top: 0;
+
+        .oneBox {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+
+          input,
+          textarea {
+            opacity: 1;
+            width: 256px;
+          }
+
+          textarea {
+            resize: none;
+            height: 120px;
+          }
+
+          label {
+            width: 115px;
+          }
         }
+      }
     }
+  }
 }

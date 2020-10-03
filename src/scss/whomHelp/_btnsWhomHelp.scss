@@ -1,29 +1,33 @@
 .btnsWhomHelp {
-    height: 80px;
-    width: 792px;
-    margin: 0 auto;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    &:hover button {
-        @include settingBorder(transparent);
+  height: 80px;
+  width: 792px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &:hover button {
+    @include settingBorder(transparent);
+  }
+
+  .whomHelpBorder {
+    @include settingBorder($main-color);
+  }
+
+  button {
+    transition: $main-transition;
+    padding: 0 42px;
+    text-align: center;
+    font-size: 24px;
+    color: $main-color;
+    cursor: pointer;
+    background-color: #fff;
+    @include settingBorder(transparent);
+    outline: none;
+    @include main-hover;
+
+    &:nth-child(2) {
+      margin: 0 65px;
     }
-    .whomHelpBorder {
-        @include settingBorder($main-color);
-    }
-    button {
-        transition: $main-transition;
-        padding: 0 42px;
-        text-align: center;
-        font-size: 24px;
-        color: $main-color;
-        cursor: pointer;
-        background-color: #fff;
-        @include settingBorder(transparent);
-        outline: none;
-        @include main-hover;
-        &:nth-child(2) {
-            margin: 0 65px;
-        }
-    }
+  }
 }

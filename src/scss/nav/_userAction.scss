@@ -1,37 +1,43 @@
 .nav_user {
-    width: 180px;
-    height: 36px;
-    position: relative;
-    &:hover li a {
-        border: none;
-    }
-    li,
+  width: 180px;
+  height: 36px;
+  position: relative;
+
+  &:hover li a {
+    border: none;
+  }
+
+  li,
+  a {
+    display: inline-block;
+  }
+
+  li {
     a {
-        display: inline-block;
+      font-size: 13px;
+      color: $user-lightColor;
+      text-decoration: none;
+      line-height: 36px;
+      width: 90px;
+      height: 36px;
+      text-align: center;
+      transition: $main-transition;
+      @include main-hover($color: $yellow);
     }
-    li {
-        a {
-            font-size: 13px;
-            color: $user-lightColor;
-            text-decoration: none;
-            line-height: 36px;
-            width: 90px;
-            height: 36px;
-            text-align: center;
-            transition: $main-transition;
-            @include main-hover($color: $yellow);
-        }
-        &:nth-last-child(3) {
-            position: absolute;
-            padding: 9px 20px;
-            left: -85%;
-            pointer-events: none;
-        }
+
+    &:nth-last-child(3) {
+      position: absolute;
+      padding: 9px 20px;
+      left: -85%;
+      pointer-events: none;
     }
-    .nav_userBorder {
-        @include settingBorder($yellow);
-    }
-    .nav_userColor {
-        color: #000;
-    }
+  }
+
+  .nav_userBorder {
+    @include settingBorder($yellow);
+  }
+
+  .nav_userColor {
+    color: #000;
+  }
 }

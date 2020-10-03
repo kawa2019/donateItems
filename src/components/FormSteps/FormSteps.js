@@ -1,10 +1,10 @@
 import React from 'react';
-import { ImportantInfo } from './ImportantInfo';
-import { StepsToDo } from './StepsToDo';
-import { WhichSteps } from './WhichSteps';
-import { ApplyBtn } from './ApplyBtn';
-import { Decor } from '../Home/Decor';
-import { useFormStepsLogic } from './useFormStepsLogic';
+import {ImportantInfo} from './ImportantInfo';
+import {StepsToDo} from './StepsToDo';
+import {WhichSteps} from './WhichSteps';
+import {ApplyBtn} from './ApplyBtn';
+import {Decor} from '../Home/Decor';
+import {useFormStepsLogic} from './useFormStepsLogic';
 
 export const FormSteps = () => {
     const {
@@ -14,18 +14,20 @@ export const FormSteps = () => {
     return (
         <section id="formStepsSection" className={stepNum > 3 && "stepSectionSmall"}>
             <div className="container">
-                {stepNum < 4 && <ImportantInfo text={textStep[stepNum].textImportant} />}
+                {stepNum < 4 && <ImportantInfo text={textStep[stepNum].textImportant}/>}
                 {stepNum < 5 ? <form className="formSteps">
-                    <StepsToDo stepNum={stepNum} text={textStep[stepNum].textToDO} />
+                    <StepsToDo stepNum={stepNum} text={textStep[stepNum].textToDO}/>
                     <WhichSteps stepOneArr={stepOneArr} handleChange={handleChange} customBoxState={customBoxState}
-                        selectBags={selectBags} setSelectBags={setSelectBags} stepNum={stepNum}
-                        selectLocation={selectLocation} setSelectLocation={setSelectLocation}
-                        listOpen={listOpen} setListOpen={setListOpen} stepThreeChooseArr={stepThreeChooseArr}
-                        stepFourAddressData={stepFourAddressData} stepFourPickUpDate={stepFourPickUpDate} />
-                    <ApplyBtn stepNum={stepNum} setStepNum={setStepNum} customBoxState={customBoxState} setListOpen={setListOpen}
-                        stepThreeChooseArr={stepThreeChooseArr} selectLocation={selectLocation}
-                        handleChangeErrors={handleChangeErrors} />
-                </form> : <Decor text="Dziękujemy za przesłanie formularza Na maila prześlemy wszelkie informacje o odbiorze." />}
+                                selectBags={selectBags} setSelectBags={setSelectBags} stepNum={stepNum}
+                                selectLocation={selectLocation} setSelectLocation={setSelectLocation}
+                                listOpen={listOpen} setListOpen={setListOpen} stepThreeChooseArr={stepThreeChooseArr}
+                                stepFourAddressData={stepFourAddressData} stepFourPickUpDate={stepFourPickUpDate}/>
+                    <ApplyBtn stepNum={stepNum} setStepNum={setStepNum} customBoxState={customBoxState}
+                              setListOpen={setListOpen}
+                              stepThreeChooseArr={stepThreeChooseArr} selectLocation={selectLocation}
+                              handleChangeErrors={handleChangeErrors}/>
+                </form> : <Decor
+                    text="Dziękujemy za przesłanie formularza Na maila prześlemy wszelkie informacje o odbiorze."/>}
             </div>
         </section>
     )

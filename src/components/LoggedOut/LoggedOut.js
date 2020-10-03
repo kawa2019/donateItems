@@ -1,6 +1,6 @@
 import React from "react";
-import { Decor } from "../Home/Decor";
-import { BtnForm } from "../Contact/FormContact/BtnForm";
+import {Decor} from "../Home/Decor";
+import {BtnForm} from "../Contact/FormContact/BtnForm";
 
 export const LoggedOut = () => {
     return (

@@ -1,17 +1,19 @@
 .importantInfo {
+  height: 179px;
+  border: 1px solid transparent;
+
+  &:before {
+    content: "";
+    background-color: #fad648;
+    position: absolute;
     height: 179px;
-    border: 1px solid transparent;
-    &:before {
-        content: "";
-        background-color: #fad648;
-        position: absolute;
-        height: 179px;
-        left: 0;
-        right: 0;
-        z-index: -1;
-    }
-    .importantText {
-        font-size: 22px;
-        line-height: 30px;
-    }
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .importantText {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }

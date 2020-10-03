@@ -1,23 +1,25 @@
 .cta {
-    font-family: inherit;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 36px;
-    border: $main-border;
-    transition: $main-transition;
-    cursor: pointer;
-    background-color: #fff;
-    color: $main-color;
-    height: 120px;
-    width: 310px;
-    a {
-        color: inherit;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%;
-        padding: 22px 0;
-    }
-    &:hover {
-        opacity: 0.5;
-    }
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 36px;
+  border: $main-border;
+  transition: $main-transition;
+  cursor: pointer;
+  background-color: #fff;
+  color: $main-color;
+  height: 120px;
+  width: 310px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 22px 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }

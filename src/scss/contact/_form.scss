@@ -1,24 +1,27 @@
 .formContact {
-    position: relative;
-    width: 528px;
-    height: 510px;
-    margin-top: 200px;
-    color: $main-color;
-    .message {
-        margin-top: 40px;
-        textarea {
-            height: 97px;
-            resize: none;
-        }
+  position: relative;
+  width: 528px;
+  height: 510px;
+  margin-top: 200px;
+  color: $main-color;
+
+  .message {
+    margin-top: 40px;
+
+    textarea {
+      height: 97px;
+      resize: none;
     }
-    .validateSucess {
-        position: absolute;
-        color: #4caf50;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: bold;
-        left: 25%;
-        right: 25%;
-        text-align: center;
-    }
+  }
+
+  .validateSucess {
+    position: absolute;
+    color: #4caf50;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+  }
 }

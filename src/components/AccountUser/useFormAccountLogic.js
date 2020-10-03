@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
-import { useHistory } from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
-export const useFormAccountLogic=(kind, {setLoggedUser})=>{
+export const useFormAccountLogic = (kind, {setLoggedUser}) => {
     const [email, setEmail] = useState("");
     const [errorEmail, setErrorEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -42,6 +42,8 @@ export const useFormAccountLogic=(kind, {setLoggedUser})=>{
             history.push("/");
         }
     }
-    return {email, password, repeatPassword, setEmail, setPassword, setRepeatPassword,
-      errorEmail, errorPassword , errorRepeatPassword, handleForm}
+    return {
+        email, password, repeatPassword, setEmail, setPassword, setRepeatPassword,
+        errorEmail, errorPassword, errorRepeatPassword, handleForm
+    }
 }

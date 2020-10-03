@@ -1,19 +1,21 @@
 @mixin labelInputFormStep {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 40px;
-    color: #000;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000;
 }
+
 .formSteps {
-    height: 883px;
-    border: 1px solid transparent;
-    position: relative;
-    .form_stepNum {
-        margin-top: 36px;
-        margin-bottom: 70px;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 27px;
-        display: block;
-    }
+  height: 883px;
+  border: 1px solid transparent;
+  position: relative;
+
+  .form_stepNum {
+    margin-top: 36px;
+    margin-bottom: 70px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 27px;
+    display: block;
+  }
 }
