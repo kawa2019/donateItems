@@ -10,7 +10,7 @@ export const AboutUs = ({decor}) => {
                     {decor}
                     <p className="aboutUsText">Nori grape silver beet broccoli kombu beet greens fava bean potato
                         quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-                    <img src={sign} className="signature"/>
+                    <img src={sign} alt={""} className="signature"/>
                 </div>
             </div>
         </section>

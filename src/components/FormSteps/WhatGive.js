@@ -8,6 +8,8 @@ export const WhatGive = ({customBoxState, stepThreeChooseArr, stepChooseArr, sel
             if (customBoxState[group] !== "") {
                 const text = stepThreeChooseArr[stepThreeChooseArr.findIndex(x => x.name === group)].text;
                 return `, ${text}`
+            } else{
+                return null
             }
         });
         return groupArr.map(group => group)
@@ -17,12 +19,12 @@ export const WhatGive = ({customBoxState, stepThreeChooseArr, stepChooseArr, sel
             <p className="important">Oddajesz:</p>
             <ul>
                 <li>
-                    <img src={tshirt}/>
+                    <img src={tshirt} alt={""}/>
                     <p>{selectBags !== "— wybierz —" && selectBags} worki, {stepChooseArr[stepChooseArr.findIndex(x => x.value === customBoxState.items)].text}
                         {groupFn()}</p>
                 </li>
                 <li>
-                    <img src={location}/>
+                    <img src={location} alt={""}/>
                     <p>dla
                         lokalizacji: {selectLocation !== "— wybierz —" && selectLocation}{customBoxState.orgName && customBoxState.orgName}</p>
                 </li>

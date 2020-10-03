@@ -36,6 +36,7 @@ export const WhichSteps = ({
                             customBoxState={customBoxState} selectBags={selectBags} stepChooseArr={stepOneArr}
                             stepThreeChooseArr={stepThreeChooseArr}
                             selectLocation={selectLocation}/>
+            default:
         }
     }
     return (

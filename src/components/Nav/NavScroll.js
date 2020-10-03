@@ -24,7 +24,7 @@ export const NavScroll = ({startBorder, setStartBorder}) => {
                 closeMenuBarsFn()
             }}>
                 <li>
-                    <Link to="/" className={startBorder && "nav_menuBorder"}
+                    <Link to="/" className={startBorder? "nav_menuBorder" : undefined}
                           onClick={() => setBarsMenu(false)}>Start</Link>
 
                 </li>

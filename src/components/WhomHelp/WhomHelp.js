@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {MainInfo} from './MainInfo/MainInfo';
 import {BtnsWhomHelp} from './BtnsWhomHelp';
 import {useWhomHelpLogic} from './useWhomHelpLogic';

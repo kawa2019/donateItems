@@ -25,13 +25,13 @@ export const useFormContactLogic = () => {
             const data = await response.json();
             console.log(data)
             if (data.status === "error") {
-                const setErrors = data.errors.map(error => {
+                data.errors.map(error => {
                     if (error.param === "name") {
-                        setErrorName('Podane imię jest nieprawidłowe');
+                      return   setErrorName('Podane imię jest nieprawidłowe');
                     } else if (error.param === "email") {
-                        setErrorEmail('Podane email jest nieprawidłowe');
+                      return   setErrorEmail('Podane email jest nieprawidłowe');
                     } else {
-                        setErrorText('Wiadomość musi mieć conajmniej 120 znaków!');
+                       return  setErrorText('Wiadomość musi mieć conajmniej 120 znaków!');
                     }
                 })
             } else {

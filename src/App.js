@@ -12,9 +12,7 @@ import {FormSteps} from './components/FormSteps/FormSteps'
 import {
     HashRouter,
     Route,
-    Link,
     Switch,
-    NavLink,
 } from 'react-router-dom';
 
 

@@ -30,7 +30,6 @@ export const ApplyBtn = ({
                 setStepNum(prevState => prevState + 1);
                 setListOpen(false)
             }
-            ;
         } else if (stepNum === 3) {
             const errorArr = []
             if (customBoxState.street.length < 2) {
@@ -39,7 +38,7 @@ export const ApplyBtn = ({
             }
             ;
             console.log((customBoxState.street.length < 2))
-            if (!/[0-9]{2}\-[0-9]{3}/.test(customBoxState.postCode)) {
+            if (!/[0-9]{2}-[0-9]{3}/.test(customBoxState.postCode)) {
                 errorArr.push(customBoxState.postCode);
                 handleChangeErrors("Niepoprawny format, np.xx-xxx!", "postCode")
             }

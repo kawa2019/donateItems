@@ -12,7 +12,7 @@ export const FormSteps = () => {
         listOpen, setListOpen, stepThreeChooseArr, stepFourAddressData, stepFourPickUpDate, handleChangeErrors
     } = useFormStepsLogic()
     return (
-        <section id="formStepsSection" className={stepNum > 3 && "stepSectionSmall"}>
+        <section id="formStepsSection" className={stepNum > 3 ? "stepSectionSmall": undefined}>
             <div className="container">
                 {stepNum < 4 && <ImportantInfo text={textStep[stepNum].textImportant}/>}
                 {stepNum < 5 ? <form className="formSteps">
